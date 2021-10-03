@@ -1,0 +1,10 @@
+{
+  "name": "pavetok.github.io",
+  "scripts": {
+    "build": "npx eleventy",
+    "start": "npx eleventy --serve"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1"
+  }
+}

@@ -1,0 +1,12 @@
+---
+title: Work
+layout: base.html
+tags: site
+---
+{% for project in collections.work %}
+<article>
+  <h4>
+    <a href="{{ project.url }}">{{ project.data.title }}</a>
+  </h4>
+</article>
+{% endfor %}
