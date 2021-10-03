@@ -1,22 +1,9 @@
 {
   "name": "pavetok.github.io",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "scripts": {
     "build": "npx eleventy",
     "start": "npx eleventy --serve"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/pavetok/pavetok.github.io.git"
-  },
-  "author": "",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/pavetok/pavetok.github.io/issues"
-  },
-  "homepage": "https://github.com/pavetok/pavetok.github.io#readme",
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1"
   }
