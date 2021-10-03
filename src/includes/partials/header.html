@@ -1,0 +1,11 @@
+<header>
+  <nav>
+    <ul>
+      {% for page in collections.site %}
+      <li>
+        <a href="{{ page.url }}">{{ page.data.title }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </nav>
+</header>

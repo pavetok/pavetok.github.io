@@ -1,0 +1,28 @@
+@startuml
+left to right direction
+
+skinparam card {
+    BorderThickness 0.5
+    BackgroundColor 0
+}
+
+legend Ongoing
+
+card Alice {
+    circle "[[/work/transaction-types/queue-example/diagrams/right-send/{right} right]]" as owner1 <<send>>
+}
+
+circle "[[/work/transaction-types/queue-example/diagrams/queue-client/{queue} queue]]" as queue1 <<client>>
+
+card Bob {
+    circle "[[/work/transaction-types/queue-example/diagrams/right-receive/{right} right]]" as owner2 <<receive>>
+}
+
+card Carol {
+    circle "[[/work/transaction-types/queue-example/diagrams/queue-server/{queue} queue]]" as queue2 <<server>>
+}
+
+queue1 -- queue2
+owner1 --> queue1
+queue1 --> owner2
+@enduml

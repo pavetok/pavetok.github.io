@@ -1,0 +1,15 @@
+---
+pagination:
+  data: work.transaction-types.queue-example
+  size: 1
+  alias: diagram
+  addAllPagesToCollections: true
+layout: base.html
+tags: queue
+permalink: "{{ page.filePathStem }}/{{ diagram.title | slug }}/index.html"
+eleventyComputed:
+  title: "{{ diagram.title }}"
+---
+<div>
+  {% include diagram.file_path %}
+</div>

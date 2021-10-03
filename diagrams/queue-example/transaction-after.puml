@@ -1,0 +1,28 @@
+@startuml
+left to right direction
+
+skinparam card {
+    BorderThickness 0.5
+    BackgroundColor 0
+}
+
+skinparam label {
+    FontSize 0
+}
+
+legend After
+
+card Alice {
+    label nothing
+}
+
+card Bob {
+    circle "[[/work/transaction-types/queue-example/diagrams/queue-client/{queue} queue]]" as queue1 <<client>>
+}
+
+card Carol {
+    circle "[[/work/transaction-types/queue-example/diagrams/queue-server/{queue} queue]]" as queue2 <<server>>
+}
+
+queue1 -- queue2
+@enduml

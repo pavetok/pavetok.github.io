@@ -2,8 +2,10 @@ module.exports = config => {
   return {
     dir: {
       input: "src",
-      output: "dist",
-      layouts: "layouts"
+      output: "public",
+      layouts: "layouts",
+      includes: "includes",
+      data: "data"
     },
     markdownTemplateEngine: "njk",
     dataTemplateEngine: "njk",
