@@ -10,8 +10,6 @@ skinparam label {
     FontSize 0
 }
 
-legend After
-
 card Alice {
     label nothing
 }

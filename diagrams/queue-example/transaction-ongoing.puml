@@ -6,8 +6,6 @@ skinparam card {
     BackgroundColor 0
 }
 
-legend Ongoing
-
 card Alice {
     circle "[[/work/transaction-types/queue-example/diagrams/right-send/{right} right]]" as owner1 <<send>>
 }
