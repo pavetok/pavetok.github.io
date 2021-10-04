@@ -7,13 +7,13 @@ skinparam card {
 }
 
 card Alice {
-    circle "[[/work/transaction-types/queue-example/diagrams/right-send/{right} right]]" as owner1 <<send>>
+    circle "[[/work/transaction-types/queue-example/diagrams/right-send/{right} right]]" as right1 <<send>>
 }
 
 circle "[[/work/transaction-types/queue-example/diagrams/queue-client/{queue} queue]]" as queue1 <<client>>
 
 card Bob {
-    circle "[[/work/transaction-types/queue-example/diagrams/right-receive/{right} right]]" as owner2 <<receive>>
+    circle "[[/work/transaction-types/queue-example/diagrams/right-receive/{right} right]]" as right2 <<receive>>
 }
 
 card Carol {
@@ -21,6 +21,8 @@ card Carol {
 }
 
 queue1 -- queue2
-owner1 --> queue1
-queue1 --> owner2
+right1 --> queue1
+queue1 --> right2
+
+caption Рис.2. Во время выполнения трансакции
 @enduml

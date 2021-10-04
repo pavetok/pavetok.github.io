@@ -2,13 +2,13 @@
 pagination:
   data: work.transaction-types.queue-example
   size: 1
-  alias: diagram
+  alias: diag
   addAllPagesToCollections: true
 layout: base.html
-permalink: "{{ page.filePathStem }}/{{ diagram.title | slug }}/index.html"
+permalink: "{{ page.filePathStem }}/{{ diag.title | slug }}/index.html"
 eleventyComputed:
-  title: "{{ diagram.title }}"
+  title: "{{ diag.title }}"
 ---
-<div>
-  {% include diagram.file_path %}
-</div>
+{%- from "partials/diagram.html" import diagram -%}
+
+{{ diagram(diag.file_path) }}

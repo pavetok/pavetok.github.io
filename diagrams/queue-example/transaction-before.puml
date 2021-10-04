@@ -7,18 +7,31 @@ skinparam card {
 }
 
 card Alice {
-    circle "[[/work/transaction-types/queue-example/diagrams/right-send/{right} right]]" as owner1 <<send>>
+    circle "[[/work/transaction-types/queue-example/diagrams/right-send/{right} right]]" as right1 <<send>>
     circle "[[/work/transaction-types/queue-example/diagrams/queue-client/{queue} queue]]" as queue1 <<client>>
 }
 
+note as AliceNote
+  Право на передачу [[/work/transaction-types/queue-example/diagrams/queue-client/{queue} queue]] Бобу
+end note
+AliceNote -- right1
+
 card Bob {
-    circle "[[/work/transaction-types/queue-example/diagrams/right-receive/{right} right]]" as owner2 <<receive>>
+    circle "[[/work/transaction-types/queue-example/diagrams/right-receive/{right} right]]" as right2 <<receive>>
 }
+
+note as BobNote
+  Право на получение [[/work/transaction-types/queue-example/diagrams/queue-client/{queue} queue]] от Алисы
+end note
+'BobNote -u- right2
+right2 -- BobNote
 
 card Carol {
     circle "[[/work/transaction-types/queue-example/diagrams/queue-server/{queue} queue]]" as queue2 <<server>>
 }
 
-owner1 -- owner2
+right1 -- right2
 queue1 -- queue2
+
+caption Рис.1. До начала трансакции
 @enduml

@@ -31,5 +31,5 @@ q3 -d-> q5: none
 q4 -u-> q1: A
 
 legend queue<sub>A</sub>
-footer server
+caption server
 @enduml

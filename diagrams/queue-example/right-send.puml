@@ -20,5 +20,5 @@ card 1 as s2
 s1 -> s2: [[/work/transaction-types/queue-example/diagrams/queue-client/{queue} queue]]
 
 legend right
-footer send
+caption send
 @enduml

@@ -23,4 +23,6 @@ card Carol {
 }
 
 queue1 -- queue2
+
+caption Рис.3. После завершения трансакции
 @enduml

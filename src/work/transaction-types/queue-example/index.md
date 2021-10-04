@@ -3,20 +3,8 @@ title: Queue Example
 layout: base.html
 tags: transactionTypes
 ---
-### До начала трансакции
+{%- from "partials/diagram.html" import diagram -%}
 
-<div>
-  {% include 'diagrams/queue-example/transaction-before.svg' %}
-</div>
-
-### В процессе выполнения трансакции
-
-<div>
-  {% include 'diagrams/queue-example/transaction-ongoing.svg' %}
-</div>
-
-### После завершения трансакции
-
-<div>
-  {% include 'diagrams/queue-example/transaction-after.svg' %}
-</div>
+{{ diagram("diagrams/queue-example/transaction-before.svg") }}
+{{ diagram("diagrams/queue-example/transaction-ongoing.svg") }}
+{{ diagram("diagrams/queue-example/transaction-after.svg") }}

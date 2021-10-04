@@ -1,11 +1,5 @@
-<header class="header">
+<header>
   <nav>
-    <ul>
-      {% for page in collections.site %}
-      <li>
-        <a href="{{ page.url }}">{{ page.data.title }}</a>
-      </li>
-      {% endfor %}
-    </ul>
+    {{ collections.all | eleventyNavigation | eleventyNavigationToHtml | safe }}
   </nav>
 </header>
