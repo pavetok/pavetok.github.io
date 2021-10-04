@@ -1,9 +1,32 @@
-.header {
-  max-width: 500px;
-  margin: auto;
+header * {
+    display: inline;
 }
 
-.content {
-  max-width: 500px;
-  margin: auto;
+header li {
+    margin: 20px;
+}
+
+header li a {
+    color: blue;
+    font-size: 14pt;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+main {
+    padding: 30px;
+    font-size: 1.2em;
+}
+
+h4 {
+    text-align: center;
+}
+
+.diagram {
+    text-align: center;
+}
+
+.text {
+    max-width: 500px;
+    margin: auto
 }
