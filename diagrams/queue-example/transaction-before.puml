@@ -33,5 +33,5 @@ card Carol {
 right1 -- right2
 queue1 -- queue2
 
-caption Рис.1. До начала трансакции
+caption \nДо начала трансакции
 @enduml

@@ -24,5 +24,5 @@ queue1 -- queue2
 right1 --> queue1
 queue1 --> right2
 
-caption Рис.2. Во время выполнения трансакции
+caption \nВо время выполнения трансакции
 @enduml
