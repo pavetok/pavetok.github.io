@@ -4,28 +4,52 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-  <style>header *{display:inline}header li{margin:20px}header li a{color:#00f;font-size:14pt;cursor:pointer;text-decoration:none}main{padding:30px;font-size:1.2em}h4{text-align:center}.diagram{text-align:center}.text{max-width:500px;margin:auto}</style>
+  <style>#main-menu .menu-item{display:inline;padding:0 15px}.menu-item a{color:#00f;font-size:1.4em;cursor:pointer;text-decoration:none}#content{font-size:1.2em}.article>.title{text-align:center;padding-top:20px}.section>.title{text-align:center;padding-top:10px}.article>.text{max-width:500px;margin:0 auto}.article>.figure{text-align:center;padding:30px 0}.figure>.caption{text-align:center;font-size:.9em;font-style:italic}.article>.suggestion{max-width:400px;margin:0 auto}.suggestion>.title{margin:0}.suggestion>.teaser{font-size:.9em;color:#696969}</style>
   <title>About Me</title>
 </head>
 <body>
 <header>
-  <nav>
-    <ul><li><a href="/work/">Work</a></li>
-<li><a href="/blog/">Blog</a></li>
-<li><a href="/about/">About</a></li></ul>
+  <nav id="main-menu">
+    <ul>
+      <li class="menu-item">
+        <a href="/work/">Work</a>
+      </li>
+      <li class="menu-item">
+        <a href="/blog/">Blog</a>
+      </li>
+      <li class="menu-item">
+        <a href="/about/">About</a>
+      </li>
+    </ul>
   </nav>
 </header>
 
-<main>
-  <article class="text">
-  <h2>About Me</h2>
-  <p>My name is Pavel Vetokhin and I'm a passionate software engineer interested in session types, capability-based security, workflow engines, institutional economics (in particular transactions) and tons of other stuff.</p>
-<p>I'm currently located in Russia and working as a backend engineer at <a href="https://nexign.com">Nexign</a>.</p>
-<p>My pages on the Internet:</p>
+<main id="content">
+  <article class="article">
+  <h2 class="title">
+    About Me
+  </h2>
+  
+<div class="text">
+    <p>
+  My name is Pavel Vetokhin and I'm a passionate software engineer interested in session types,
+  capability-based security, workflow engines, institutional economics (in particular transactions) and
+  tons of other stuff.
+</p>
+
+<p>
+  I'm currently located in Russia and working as a backend engineer at <a href="https://nexign.com">Nexign</a>.
+</p>
+
+<p>
+  My pages on the Internet:
+</p>
 <ul>
-<li><a href="https://github.com/pavetok">GitHub</a></li>
-<li><a href="https://www.facebook.com/pavel.vetokhin">Facebook</a></li>
+  <li><a href="https://github.com/pavetok">GitHub</a></li>
+  <li><a href="https://www.facebook.com/pavel.vetokhin">Facebook</a></li>
 </ul>
+</div>
+
 
 </article>
 
