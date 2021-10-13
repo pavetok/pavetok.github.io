@@ -20,11 +20,11 @@
     "path": "diagrams/queue-example/queue-client.svg"
   },
   {
-    "title": "Right Send",
+    "title": "Capability Send",
     "path": "diagrams/queue-example/capability-send.svg"
   },
   {
-    "title": "Right Receive",
+    "title": "Capability Receive",
     "path": "diagrams/queue-example/capability-receive.svg"
   }
 ]
