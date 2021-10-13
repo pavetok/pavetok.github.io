@@ -7,31 +7,28 @@ skinparam card {
 }
 
 card Alice {
-    circle "[[/work/transaction-types/queue-example/diagrams/right-send/{right} right]]" as right1 <<send>>
+    circle "[[/work/transaction-types/queue-example/diagrams/capability-send/{capability} capability]]" as capability1 <<send>>
     circle "[[/work/transaction-types/queue-example/diagrams/queue-client/{queue} queue]]" as queue1 <<client>>
 }
 
 note as AliceNote
-  Право на передачу [[/work/transaction-types/queue-example/diagrams/queue-client/{queue} queue]] Бобу
+  Возможность передать [[/work/transaction-types/queue-example/diagrams/queue-client/{queue} queue]] Бобу
 end note
-AliceNote -- right1
+AliceNote -- capability1
 
 card Bob {
-    circle "[[/work/transaction-types/queue-example/diagrams/right-receive/{right} right]]" as right2 <<receive>>
+    circle "[[/work/transaction-types/queue-example/diagrams/capability-receive/{capability} capability]]" as capability2 <<receive>>
 }
 
 note as BobNote
-  Право на получение [[/work/transaction-types/queue-example/diagrams/queue-client/{queue} queue]] от Алисы
+  Возможность получить [[/work/transaction-types/queue-example/diagrams/queue-client/{queue} queue]] от Алисы
 end note
-'BobNote -u- right2
-right2 -- BobNote
+capability2 -- BobNote
 
 card Carol {
     circle "[[/work/transaction-types/queue-example/diagrams/queue-server/{queue} queue]]" as queue2 <<server>>
 }
 
-right1 -- right2
+capability1 -- capability2
 queue1 -- queue2
-
-caption \nДо начала трансакции
 @enduml

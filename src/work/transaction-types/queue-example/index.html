@@ -1,0 +1,37 @@
+---
+title: Простейший пример с очередью
+teaser: Простейший пример передачи/получения доступа к некоторому ресурсу
+layout: article.html
+tags: transactionTypes
+---
+{%- import "components/article.html" as article -%}
+
+{% call article.text() -%}
+Перед трансакцией Алиса в любой момент может
+либо воспользоваться очередью, либо передать её Бобу.
+Боб в любой момент может получить доступ к очереди.
+{%- endcall %}
+
+{% call article.figure("diagrams/queue-example/transaction-before.svg") -%}
+Перед трансакцией
+{%- endcall %}
+
+{% call article.text() -%}
+Во время трансакции Алиса уже лишается доступа к очереди.
+Боб по-прежнему не имеет доступа к очереди.
+{%- endcall %}
+
+{% call article.figure("diagrams/queue-example/transaction-ongoing.svg") -%}
+Во время трансакции
+{%- endcall %}
+
+{% call article.text() -%}
+После трансакции Алиса лишается доступа к очереди и
+соответственно возможности передавать её кому-либо.
+Боб теперь может пользоваться очередью,
+но не может передавать её кому-либо.
+{%- endcall %}
+
+{% call article.figure("diagrams/queue-example/transaction-after.svg") -%}
+После трансакции
+{%- endcall %}

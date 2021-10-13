@@ -2,7 +2,8 @@
   "name": "pavetok.github.io",
   "scripts": {
     "build": "npx eleventy",
-    "start": "npx eleventy --serve"
+    "start": "npx eleventy --serve",
+    "puml": "java -jar plantuml.jar -svg -nometadata -o src/_includes/$ diagrams/**"
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",

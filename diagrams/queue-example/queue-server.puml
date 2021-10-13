@@ -10,8 +10,8 @@ skinparam legend {
     FontStyle bold
 }
 
-skinparam footer {
-    FontSize 13
+skinparam caption {
+    FontStyle italic
 }
 
 card "&" as q1

@@ -1,0 +1,38 @@
+{% macro suggestion(article) %}
+<article class="suggestion">
+  <h3 class="title">
+    <a href="{{ article.url }}">{{ article.data.title }}</a>
+  </h3>
+  <p class="teaser">
+    {{ article.data.teaser }}
+  </p>
+</article>
+{% endmacro %}
+
+{% macro section(title=null) %}
+<section class="section">
+  {% if title %}
+  <h4 class="title">
+    {{ title }}
+  </h4>
+  {% endif %}
+  {{ caller() }}
+</section>
+{% endmacro %}
+
+{% macro text() %}
+<div class="text">
+    {{ caller() }}
+</div>
+{% endmacro %}
+
+{% macro figure(path) %}
+<figure class="figure">
+  {% include path %}
+  {% if caller %}
+  <figcaption class="caption">
+    {{ caller() }}
+  </figcaption>
+  {% endif %}
+</figure>
+{% endmacro %}

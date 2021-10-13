@@ -1,0 +1,11 @@
+---
+title: Transaction Types
+teaser: Нотация и примеры описания трансакций
+layout: article.html
+tags: work
+---
+{%- import "components/article.html" as article -%}
+
+{% for type in collections.transactionTypes %}
+{{ article.suggestion(type) }}
+{% endfor %}

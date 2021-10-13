@@ -1,5 +1,11 @@
 <header>
-  <nav>
-    {{ collections.all | eleventyNavigation | eleventyNavigationToHtml | safe }}
+  <nav id="main-menu">
+    <ul>
+      {%- for entry in collections.all | eleventyNavigation %}
+      <li class="menu-item">
+        <a href="{{ entry.url | url }}">{{ entry.title }}</a>
+      </li>
+      {%- endfor %}
+    </ul>
   </nav>
 </header>

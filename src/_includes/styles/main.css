@@ -1,0 +1,55 @@
+#main-menu .menu-item {
+  display: inline;
+  padding: 0 15px;
+}
+
+.menu-item a {
+  color: blue;
+  font-size: 1.4em;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#content {
+  font-size: 1.2em;
+}
+
+.article > .title {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.section > .title {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.article > .text {
+  max-width: 500px;
+  margin: 0 auto
+}
+
+.article > .figure {
+  text-align: center;
+  padding: 30px 0;
+}
+
+.figure > .caption {
+  text-align: center;
+  font-size: .9em;
+  font-style: italic;
+}
+
+.article > .suggestion {
+  max-width: 400px;
+  margin: 0 auto
+}
+
+.suggestion > .title {
+  margin: 0;
+}
+
+.suggestion > .teaser {
+  font-size: .9em;
+  color: dimgray;
+}

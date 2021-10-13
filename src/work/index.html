@@ -1,10 +1,12 @@
 ---
 title: My Work
-layout: text.html
+layout: article.html
 eleventyNavigation:
   key: Work
   order: 1
 ---
+{%- import "components/article.html" as article -%}
+
 {% for project in collections.work %}
-### [{{ project.data.title }}]({{ project.url }})
+{{ article.suggestion(project) }}
 {% endfor %}

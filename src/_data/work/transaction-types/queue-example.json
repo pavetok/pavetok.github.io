@@ -1,30 +1,30 @@
 [
   {
     "title": "Transaction Before",
-    "file_path": "diagrams/queue-example/transaction-before.svg"
+    "path": "diagrams/queue-example/transaction-before.svg"
   },
   {
     "title": "Transaction Ongoing",
-    "file_path": "diagrams/queue-example/transaction-ongoing.svg"
+    "path": "diagrams/queue-example/transaction-ongoing.svg"
   },
   {
     "title": "Transaction After",
-    "file_path": "diagrams/queue-example/transaction-after.svg"
+    "path": "diagrams/queue-example/transaction-after.svg"
   },
   {
     "title": "Queue Server",
-    "file_path": "diagrams/queue-example/queue-server.svg"
+    "path": "diagrams/queue-example/queue-server.svg"
   },
   {
     "title": "Queue Client",
-    "file_path": "diagrams/queue-example/queue-client.svg"
+    "path": "diagrams/queue-example/queue-client.svg"
   },
   {
     "title": "Right Send",
-    "file_path": "diagrams/queue-example/right-send.svg"
+    "path": "diagrams/queue-example/capability-send.svg"
   },
   {
     "title": "Right Receive",
-    "file_path": "diagrams/queue-example/right-receive.svg"
+    "path": "diagrams/queue-example/capability-receive.svg"
   }
 ]

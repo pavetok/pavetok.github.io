@@ -7,13 +7,13 @@ skinparam card {
 }
 
 card Alice {
-    circle "[[/work/transaction-types/queue-example/diagrams/right-send/{right} right]]" as right1 <<send>>
+    circle "[[/work/transaction-types/queue-example/diagrams/capability-send/{capability} capability]]" as capability1 <<send>>
 }
 
 circle "[[/work/transaction-types/queue-example/diagrams/queue-client/{queue} queue]]" as queue1 <<client>>
 
 card Bob {
-    circle "[[/work/transaction-types/queue-example/diagrams/right-receive/{right} right]]" as right2 <<receive>>
+    circle "[[/work/transaction-types/queue-example/diagrams/capability-receive/{capability} capability]]" as capability2 <<receive>>
 }
 
 card Carol {
@@ -21,8 +21,6 @@ card Carol {
 }
 
 queue1 -- queue2
-right1 --> queue1
-queue1 --> right2
-
-caption \nВо время выполнения трансакции
+capability1 --> queue1
+queue1 --> capability2
 @enduml
