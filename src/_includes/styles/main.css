@@ -14,9 +14,21 @@
   font-size: 1.2em;
 }
 
+.title > a {
+  text-decoration: none;
+}
+
+.article {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .article > .title {
   text-align: center;
   padding-top: 20px;
+  padding-bottom: 10px;
 }
 
 .section > .title {
@@ -27,6 +39,10 @@
 .article > .text {
   max-width: 500px;
   margin: 0 auto
+}
+
+.text {
+  text-align: justify;
 }
 
 .figure {
@@ -46,10 +62,11 @@
 }
 
 .suggestion > .title {
-  margin: 0;
+  line-height: 0;
 }
 
 .suggestion > .teaser {
-  font-size: .9em;
+  line-height: 1em;
+  font-size: .85em;
   color: dimgray;
 }
