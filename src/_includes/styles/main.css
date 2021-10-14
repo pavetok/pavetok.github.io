@@ -55,11 +55,13 @@
 }
 
 .suggestion > .title {
-  line-height: 0;
+  line-height: 1em;
+  margin: .5em 0;
 }
 
 .suggestion > .teaser {
   line-height: 1em;
   font-size: .85em;
   color: dimgray;
+  margin: 0;
 }
