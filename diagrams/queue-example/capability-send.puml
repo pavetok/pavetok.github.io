@@ -1,18 +1,5 @@
 @startuml
-skinparam card {
-    BorderThickness 0.5
-    BackgroundColor 0
-    RoundCorner 50
-    FontSize 20
-}
-
-skinparam legend {
-    FontStyle bold
-}
-
-skinparam caption {
-    FontStyle italic
-}
+!include ../styles.puml!session
 
 card "×" as s1
 card 1 as s2
