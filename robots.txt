@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://pavetok.github.io/sitemap.xml
