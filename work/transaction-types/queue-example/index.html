@@ -4,21 +4,39 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-  <style>#main-menu .menu-item{display:inline;padding:0 15px}.menu-item a{color:#00f;font-size:1.4em;cursor:pointer;text-decoration:none}#content{font-size:1.2em}.title>a{text-decoration:none}.article>.title{text-align:center;padding-top:20px;padding-bottom:10px}.section>.title{text-align:center;padding-top:10px}.article>.text{max-width:500px;margin:0 auto}.text{text-align:justify}.figure{text-align:center;padding:30px 0}.figure>.caption{text-align:center;font-size:.9em;font-style:italic}.article>.suggestion{max-width:400px;margin:0 auto}.suggestion>.title{line-height:1em;margin:.5em 0}.suggestion>.teaser{line-height:1em;font-size:.85em;color:#696969;margin:0}</style>
-  <title>Простейший пример с очередью</title>
+  <style>:root{max-width:70ch;padding:2em 1em;margin:auto;line-height:1.75;font-size:1.25em}#main-menu .menu-item{display:inline;padding:0 .5em}.menu-item a{color:#00f;font-size:1.4em;cursor:pointer;text-decoration:none}.title>a{text-decoration:none}.article>.title{text-align:center;padding-top:20px;padding-bottom:10px}.section>.title{text-align:center;padding-top:10px}.article>.text{max-width:500px;margin:0 auto}.text{text-align:justify}.figure{text-align:center;padding:30px 0}.figure>.caption{text-align:center;font-size:.9em;font-style:italic}.article>.suggestion{max-width:400px;margin:0 auto}.suggestion>.title{line-height:1em;margin:.5em 0}.suggestion>.teaser{line-height:1em;font-size:.85em;color:#696969;margin:0}</style>
+
+  <title>Простейший пример с очередью - Сайт Павла Ветохина</title>
+
+  <meta name="description" content="Простейший пример передачи и получения доступа к некоторому ресурсу">
+  <meta name="robots" content="index,follow">
+  <meta name="author" content="Павел Ветохин">
+
+  <link rel="canonical" href="https://pavetok.github.io/work/transaction-types/queue-example/">
+  <link rel="alternate" type="application/rss+xml" title="Сайт Павла Ветохина" href="https://pavetok.github.io/feed.xml">
+
+  <meta property="og:title" content="Простейший пример с очередью - Сайт Павла Ветохина">
+  <meta property="og:description" content="Простейший пример передачи и получения доступа к некоторому ресурсу">
+  <meta property="og:url" content="https://pavetok.github.io/work/transaction-types/queue-example/">
+
+  
+  <meta property="og:image" content="https://pavetok.github.io/work/transaction-types/queue-example/diagrams/queue-example/transaction-before.svg">
+  <meta property="og:image:alt" content="">
+  <meta property="og:type" content="article">
+  <meta name="twitter:card" content="summary">
 </head>
 <body>
 <header>
   <nav id="main-menu">
     <ul>
       <li class="menu-item">
-        <a href="/work/">Work</a>
+        <a href="/work/">Проекты</a>
       </li>
       <li class="menu-item">
-        <a href="/blog/">Blog</a>
+        <a href="/blog/">Блог</a>
       </li>
       <li class="menu-item">
-        <a href="/about/">About</a>
+        <a href="/about/">О себе</a>
       </li>
     </ul>
   </nav>
@@ -26,18 +44,14 @@
 
 <main id="content">
   <article class="article">
-  <h2 class="title">
+  <h1 class="title">
     Простейший пример с очередью
-  </h2>
-  
-<div class="text">
-    Перед трансакцией Алиса в любой момент может
+  </h1>
+  <div class="text">
+  <p>Перед трансакцией Алиса в любой момент может
 либо воспользоваться очередью, либо передать её Бобу.
-Боб в некоторый момент может получить доступ к очереди.
+Боб в некоторый момент может получить доступ к очереди.</p>
 </div>
-
-
-
 <figure class="figure">
   <?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="261px" preserveAspectRatio="none" style="width:273px;height:261px;background:#FFFFFF;" version="1.1" viewBox="0 0 273 261" width="273px" zoomAndPan="magnify"><defs><filter height="300%" id="fm29z051h92z" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[6f3707a36badac29f35c4f2560a5a777]
 cluster Alice--><rect fill="#FFFFFF" filter="url(#fm29z051h92z)" height="202" style="stroke:#000000;stroke-width:0.5;" width="110" x="7" y="27"/><line style="stroke:#000000;stroke-width:0.5;" x1="7" x2="117" y1="47.2969" y2="47.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="38" x="43" y="41.9951">Alice</text><!--MD5=[c7e919412a9c7ba93d30e76653bef527]
@@ -49,22 +63,14 @@ entity capability2--><ellipse cx="203" cy="71" fill="#FEFECE" filter="url(#fm29z
 entity queue2--><ellipse cx="203" cy="204" fill="#FEFECE" filter="url(#fm29z051h92z)" rx="8" ry="8" style="stroke:#A80036;stroke-width:1.5;"/><a href="/work/transaction-types/queue-example/diagrams/queue-server/" target="_top" title="queue" xlink:actuate="onRequest" xlink:href="/work/transaction-types/queue-example/diagrams/queue-server/" xlink:show="new" xlink:title="queue" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" text-decoration="underline" textLength="45" x="180.5" y="233.9951">queue</text></a><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="61" x="172.5" y="183.6982">«server»</text><!--MD5=[f7bfd09ef1d48f1433bb256cd6504f08]
 link capability1 to capability2--><path codeLine="16" d="M71.28,89.81 C96.06,86.24 169.44,75.68 193.94,72.16 " fill="none" id="capability1-capability2" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[33e0abff2227f4bf067f38c47f0ee4d4]
 link queue1 to queue2--><path codeLine="17" d="M71.28,185.19 C96.06,188.76 169.44,199.32 193.94,202.84 " fill="none" id="queue1-queue2" style="stroke:#A80036;stroke-width:1.0;"/></g></svg>
-  
   <figcaption class="caption">
     Перед трансакцией
   </figcaption>
-  
 </figure>
-
-
-
 <div class="text">
-    Во время трансакции Алиса уже лишается доступа к очереди.
-Боб по-прежнему не имеет доступа к очереди.
+  <p>Во время трансакции Алиса уже лишается доступа к очереди.
+Боб по-прежнему не имеет доступа к очереди.</p>
 </div>
-
-
-
 <figure class="figure">
   <?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="261px" preserveAspectRatio="none" style="width:403px;height:261px;background:#FFFFFF;" version="1.1" viewBox="0 0 403 261" width="403px" zoomAndPan="magnify"><defs><filter height="300%" id="f4jm2kg0fetpj" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[6f3707a36badac29f35c4f2560a5a777]
 cluster Alice--><rect fill="#FFFFFF" filter="url(#f4jm2kg0fetpj)" height="109" style="stroke:#000000;stroke-width:0.5;" width="110" x="7" y="140"/><line style="stroke:#000000;stroke-width:0.5;" x1="7" x2="117" y1="160.2969" y2="160.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="38" x="43" y="154.9951">Alice</text><!--MD5=[c7e919412a9c7ba93d30e76653bef527]
@@ -77,22 +83,14 @@ entity queue1--><ellipse cx="196" cy="204" fill="#FEFECE" filter="url(#f4jm2kg0f
 link queue1 to queue2--><path codeLine="17" d="M205.04,204 C228.99,204 299.71,204 323.83,204 " fill="none" id="queue1-queue2" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[bea37a60105fe139867f6a541706e114]
 link capability1 to queue1--><path codeLine="18" d="M71.26,204 C93.39,204 154.2,204 181.46,204 " fill="none" id="capability1-to-queue1" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="186.75,204,177.75,200,181.75,204,177.75,208,186.75,204" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[657ac1c40aa8dcc92fd5e0825fc817fc]
 link queue1 to capability2--><path codeLine="19" d="M205.04,196.08 C227.87,173.59 293.18,109.24 320.14,82.68 " fill="none" id="queue1-to-capability2" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="323.83,79.05,314.6164,82.5298,320.2731,82.564,320.2388,88.2208,323.83,79.05" style="stroke:#A80036;stroke-width:1.0;"/></g></svg>
-  
   <figcaption class="caption">
     Во время трансакции
   </figcaption>
-  
 </figure>
-
-
-
 <div class="text">
-    После трансакции только Боб может пользоваться очередью,
-но он не может передавать её кому-либо.
+  <p>После трансакции только Боб может пользоваться очередью,
+но он не может передавать её кому-либо.</p>
 </div>
-
-
-
 <figure class="figure">
   <?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="233px" preserveAspectRatio="none" style="width:257px;height:233px;background:#FFFFFF;" version="1.1" viewBox="0 0 257 233" width="257px" zoomAndPan="magnify"><defs><filter height="300%" id="fyzpugg2y218q" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[6f3707a36badac29f35c4f2560a5a777]
 cluster Alice--><rect fill="#FFFFFF" filter="url(#fyzpugg2y218q)" height="81" style="stroke:#000000;stroke-width:0.5;" width="54" x="31" y="140"/><line style="stroke:#000000;stroke-width:0.5;" x1="31" x2="85" y1="160.2969" y2="160.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="38" x="39" y="154.9951">Alice</text><!--MD5=[c7e919412a9c7ba93d30e76653bef527]
@@ -102,13 +100,10 @@ entity nothing--><text fill="#000000" font-family="sans-serif" font-size="0" len
 entity queue1--><ellipse cx="58" cy="71" fill="#FEFECE" filter="url(#fyzpugg2y218q)" rx="8" ry="8" style="stroke:#A80036;stroke-width:1.5;"/><a href="/work/transaction-types/queue-example/diagrams/queue-client/" target="_top" title="queue" xlink:actuate="onRequest" xlink:href="/work/transaction-types/queue-example/diagrams/queue-client/" xlink:show="new" xlink:title="queue" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" text-decoration="underline" textLength="45" x="35.5" y="100.9951">queue</text></a><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="55" x="30.5" y="50.6982">«client»</text><!--MD5=[3346453bbf050adcc64f7e8fc5f6a5cb]
 entity queue2--><ellipse cx="191" cy="71" fill="#FEFECE" filter="url(#fyzpugg2y218q)" rx="8" ry="8" style="stroke:#A80036;stroke-width:1.5;"/><a href="/work/transaction-types/queue-example/diagrams/queue-server/" target="_top" title="queue" xlink:actuate="onRequest" xlink:href="/work/transaction-types/queue-example/diagrams/queue-server/" xlink:show="new" xlink:title="queue" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" text-decoration="underline" textLength="45" x="168.5" y="100.9951">queue</text></a><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="61" x="160.5" y="50.6982">«server»</text><!--MD5=[33e0abff2227f4bf067f38c47f0ee4d4]
 link queue1 to queue2--><path d="M67.19,71 C90.72,71 158.29,71 181.81,71 " fill="none" id="queue1-queue2" style="stroke:#A80036;stroke-width:1.0;"/></g></svg>
-  
   <figcaption class="caption">
     После трансакции
   </figcaption>
-  
 </figure>
-
 
 </article>
 
