@@ -1,6 +1,14 @@
+:root {
+  max-width: 70ch;
+  padding: 2em 1em;
+  margin: auto;
+  line-height: 1.75;
+  font-size: 1.25em;
+}
+
 #main-menu .menu-item {
   display: inline;
-  padding: 0 15px;
+  padding: 0 .5em;
 }
 
 .menu-item a {
@@ -8,10 +16,6 @@
   font-size: 1.4em;
   cursor: pointer;
   text-decoration: none;
-}
-
-#content {
-  font-size: 1.2em;
 }
 
 .title > a {

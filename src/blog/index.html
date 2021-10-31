@@ -1,12 +1,13 @@
 ---
-title: My Blog
 layout: article.html
 eleventyNavigation:
-  key: Blog
+  key: Блог
   order: 2
+# data
+title: Мой блог
 ---
 {%- import "components/article.html" as article -%}
 
-{% call article.text() -%}
-<p>You can find my blog at the <a href="https://pavetok.medium.com">Medium</a>.</p>
-{%- endcall %}
+{% for post in collections.blog | reverse %}
+{{ article.suggestion(post) }}
+{% endfor %}

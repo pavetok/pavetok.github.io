@@ -6,7 +6,34 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
   {% set styles %}{% include "styles/main.css" %}{% endset -%}
   <style>{{ styles | minify | safe }}</style>
-  <title>{{ title }}</title>
+
+  {%set pageTitle %}{{ title | mandatory }} - {{ site.title }}{% endset -%}
+
+  <title>{{ pageTitle }}</title>
+
+  {%set pageTeaser %}{{ teaser or site.teaser }}{% endset -%}
+
+  <meta name="description" content="{{ pageTeaser }}">
+  <meta name="robots" content="index,follow">
+  <meta name="author" content="{{ site.author }}">
+
+  {%set pageUrl %}{{ site.url }}{{ page.url | url }}{% endset -%}
+
+  <link rel="canonical" href="{{ pageUrl }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ site.url }}/feed.xml">
+
+  <meta property="og:title" content="{{ pageTitle }}">
+  <meta property="og:description" content="{{ pageTeaser }}">
+  <meta property="og:url" content="{{ pageUrl }}">
+
+  {% if cover %}
+  {%set coverUrl %}{{ pageUrl }}{{ cover.path }}{% endset -%}
+  <meta property="og:image" content="{{ coverUrl }}">
+  <meta property="og:image:alt" content="{{ cover.caption }}">
+  {% endif -%}
+
+  <meta property="og:type" content="article">
+  <meta name="twitter:card" content="summary">
 </head>
 <body>
 {% include "partials/header.html" %}

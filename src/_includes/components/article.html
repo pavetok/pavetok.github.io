@@ -9,20 +9,11 @@
 </article>
 {% endmacro %}
 
-{% macro section(title=null) %}
-<section class="section">
-  {% if title %}
-  <h4 class="title">
-    {{ title }}
-  </h4>
-  {% endif %}
-  {{ caller() }}
-</section>
-{% endmacro %}
-
 {% macro text() %}
 <div class="text">
-    {{ caller() }}
+  {% markdown %}
+  {{ caller() }}
+  {% endmarkdown %}
 </div>
 {% endmacro %}
 
