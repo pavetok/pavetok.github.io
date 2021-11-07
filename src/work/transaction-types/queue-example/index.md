@@ -15,7 +15,7 @@ cover:
 Боб в некоторый момент может получить доступ к очереди.
 {%- endcall %}
 
-{% call article.diagram2("diagrams/transaction-before.svg") -%}
+{% call article.diagram("diagrams/transaction-before.svg") -%}
 Перед трансакцией
 {%- endcall %}
 
@@ -24,7 +24,7 @@ cover:
 Боб по-прежнему не имеет доступа к очереди.
 {%- endcall %}
 
-{% call article.diagram2("diagrams/transaction-ongoing.svg") -%}
+{% call article.diagram("diagrams/transaction-ongoing.svg") -%}
 Во время трансакции
 {%- endcall %}
 
@@ -33,6 +33,6 @@ cover:
 но он не может передавать её кому-либо.
 {%- endcall %}
 
-{% call article.diagram2("diagrams/transaction-after.svg") -%}
+{% call article.diagram("diagrams/transaction-after.svg") -%}
 После трансакции
 {%- endcall %}

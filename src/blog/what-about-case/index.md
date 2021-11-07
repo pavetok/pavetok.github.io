@@ -14,7 +14,7 @@ tags: [blog]
 
 ## Вещи
 
-{% call article.diagram2("diagrams/things.svg") -%}  
+{% call article.diagram("diagrams/things.svg") -%}  
 Взаимодействие между вещами  
 {%- endcall %}
 
@@ -35,7 +35,7 @@ tags: [blog]
 
 ## Кейсы
 
-{% call article.diagram2("diagrams/cases.svg") -%}  
+{% call article.diagram("diagrams/cases.svg") -%}  
 Взаимодействие между кейсами  
 {%- endcall %}
 

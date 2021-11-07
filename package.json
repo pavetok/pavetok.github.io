@@ -3,8 +3,7 @@
   "scripts": {
     "build": "npx eleventy",
     "start": "npx eleventy --serve",
-    "puml": "java -jar plantuml.jar -svg -nometadata -x diagrams/styles.puml -o src/_includes/$ diagrams/**/**",
-    "puml2": "java -jar plantuml.jar -svg -nometadata -x src/styles.puml src/**/*.puml"
+    "puml": "java -jar plantuml.jar -svg -nometadata -x src/styles.puml src/**/*.puml"
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
