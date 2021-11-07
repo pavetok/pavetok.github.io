@@ -1,0 +1,19 @@
+@startuml
+!include ../../../../styles.puml!transaction
+
+card Alice {
+    circle "[[/work/transaction-types/queue-example/diagrams/capability-send/{capability} capability]]" as capability1 <<send>>
+    circle "[[/work/transaction-types/queue-example/diagrams/queue-client/{queue} queue]]" as queue1 <<client>>
+}
+
+card Bob {
+    circle "[[/work/transaction-types/queue-example/diagrams/capability-receive/{capability} capability]]" as capability2 <<receive>>
+}
+
+card Carol {
+    circle "[[/work/transaction-types/queue-example/diagrams/queue-server/{queue} queue]]" as queue2 <<server>>
+}
+
+capability1 -- capability2
+queue1 -- queue2
+@enduml

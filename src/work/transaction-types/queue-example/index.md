@@ -1,6 +1,6 @@
 ---
 layout: article.html
-tags: transactionTypes
+tags: [project, transaction]
 # data
 title: Простейший пример с очередью
 teaser: Простейший пример передачи и получения доступа к некоторому ресурсу
@@ -15,7 +15,7 @@ cover:
 Боб в некоторый момент может получить доступ к очереди.
 {%- endcall %}
 
-{% call article.figure("diagrams/queue-example/transaction-before.svg") -%}
+{% call article.diagram2("diagrams/transaction-before.svg") -%}
 Перед трансакцией
 {%- endcall %}
 
@@ -24,7 +24,7 @@ cover:
 Боб по-прежнему не имеет доступа к очереди.
 {%- endcall %}
 
-{% call article.figure("diagrams/queue-example/transaction-ongoing.svg") -%}
+{% call article.diagram2("diagrams/transaction-ongoing.svg") -%}
 Во время трансакции
 {%- endcall %}
 
@@ -33,6 +33,6 @@ cover:
 но он не может передавать её кому-либо.
 {%- endcall %}
 
-{% call article.figure("diagrams/queue-example/transaction-after.svg") -%}
+{% call article.diagram2("diagrams/transaction-after.svg") -%}
 После трансакции
 {%- endcall %}

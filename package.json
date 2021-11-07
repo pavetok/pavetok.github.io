@@ -3,12 +3,16 @@
   "scripts": {
     "build": "npx eleventy",
     "start": "npx eleventy --serve",
-    "puml": "java -jar plantuml.jar -svg -nometadata -x diagrams/styles.puml -o src/_includes/$ diagrams/**"
+    "puml": "java -jar plantuml.jar -svg -nometadata -x diagrams/styles.puml -o src/_includes/$ diagrams/**/**",
+    "puml2": "java -jar plantuml.jar -svg -nometadata -x src/styles.puml src/**/*.puml"
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
     "@11ty/eleventy-navigation": "^0.3.2",
     "@11ty/eleventy-plugin-rss": "^1.1.2",
-    "clean-css": "^5.2.1"
+    "@sindresorhus/slugify": "^1.1.0",
+    "camelcase": "^6.2.0",
+    "clean-css": "^5.2.2",
+    "humanize-string": "^2.1.0"
   }
 }

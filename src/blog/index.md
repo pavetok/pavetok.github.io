@@ -1,5 +1,5 @@
 ---
-layout: article.html
+layout: base.html
 eleventyNavigation:
   key: Блог
   order: 2

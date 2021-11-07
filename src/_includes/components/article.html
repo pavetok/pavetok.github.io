@@ -1,8 +1,8 @@
 {% macro suggestion(article) %}
 <article class="suggestion">
-  <h3 class="title">
+  <h4 class="title">
     <a href="{{ article.url }}">{{ article.data.title }}</a>
-  </h3>
+  </h4>
   <p class="teaser">
     {{ article.data.teaser }}
   </p>
@@ -17,7 +17,7 @@
 </div>
 {% endmacro %}
 
-{% macro figure(path) %}
+{% macro diagram(path) %}
 <figure class="figure">
   {% include path %}
   {% if caller %}
@@ -25,5 +25,22 @@
     {{ caller() }}
   </figcaption>
   {% endif %}
+</figure>
+{% endmacro %}
+
+{% macro diagram2(path) %}
+<figure class="figure">
+  <object type="image/svg+xml" data="{{ path }}"></object>
+  {% if caller %}
+  <figcaption class="caption">
+    {{ caller() }}
+  </figcaption>
+  {% endif %}
+</figure>
+{% endmacro %}
+
+{% macro cover(pic) %}
+<figure class="cover">
+  <img src="{{ pic.path | mandatory }}" alt="{{ pic.caption | mandatory }}">
 </figure>
 {% endmacro %}
