@@ -1,9 +1,8 @@
 ---
 layout: article.html
-tags: work
-# data
 title: Трансакционные типы
 teaser: Нотация и примеры описания трансакций
+tags: [work]
 ---
 {%- import "components/article.html" as article -%}
 

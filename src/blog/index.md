@@ -3,7 +3,6 @@ layout: base.html
 eleventyNavigation:
   key: Блог
   order: 2
-# data
 title: Мой блог
 ---
 {%- import "components/article.html" as article -%}
