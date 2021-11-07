@@ -4,9 +4,84 @@
   <subtitle>Размышления о разработке, workflow движках, институциональной экономике и многом другом</subtitle>
   <link href="https://pavetok.github.io/feed.xml" rel="self"/>
   <link href="https://pavetok.github.io"/>
-  <updated>2021-10-31T05:57:33Z</updated>
+  <updated>2021-11-07T18:49:28Z</updated>
   <id>https://pavetok.github.io</id>
   <author>
     <name>Павел Ветохин</name>
   </author>
+  
+  <entry>
+    <title>Что такое кейс</title>
+    <link href="https://pavetok.github.io/blog/what-about-case/"/>
+    <updated>2021-11-07T00:00:00Z</updated>
+    <id>https://pavetok.github.io/blog/what-about-case/</id>
+    <content type="html">&lt;figure class=&quot;cover&quot;&gt;
+  &lt;img src=&quot;https://pavetok.github.io/blog/what-about-case/things-and-cases.png&quot; alt=&quot;Вещи и кейсы в пространстве и времени&quot; /&gt;
+&lt;/figure&gt;
+&lt;h2&gt;Вещи&lt;/h2&gt;
+&lt;figure class=&quot;figure&quot;&gt;
+  &lt;object type=&quot;image/svg+xml&quot; data=&quot;https://pavetok.github.io/blog/what-about-case/diagrams/things.svg&quot;&gt;&lt;/object&gt;
+  &lt;figcaption class=&quot;caption&quot;&gt;
+    Взаимодействие между вещами
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;Из курса школьной физики нам известно, что &lt;em&gt;вещи&lt;/em&gt;&lt;sup&gt;1&lt;/sup&gt; взаимодействуют друг с другом.
+Одни &lt;em&gt;взаимодействия&lt;/em&gt; видны невооруженным глазом, т.к. сопровождаются прямым контактом
+(например, соударения), другие - протекают без видимого контакта.&lt;/p&gt;
+&lt;p&gt;Как же объяснить взаимодействия без видимого контакта?&lt;/p&gt;
+&lt;p&gt;На помощь вещам приходят &lt;em&gt;физические силы&lt;/em&gt;, посредством действий-реакций которых осуществляются
+взаимодействия. Силы разных типов по сути являются разными протоколами двустороннего (или
+многостороннего) приёма-передачи &lt;em&gt;энергии&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Вещи взаимодействуют со множеством других вещей одновременно. В рамках одних взаимодействий
+они принимают энергию, в рамках других - передают. Переизбыток энергии может приводить к
+отказам (например, к необратимым деформациям). Совокупность энергии по всем взаимодействиям
+определяет сохранение-изменение занимаемого вещью &lt;em&gt;места&lt;/em&gt; в &lt;em&gt;пространстве&lt;/em&gt;.&lt;/p&gt;
+&lt;h2&gt;Кейсы&lt;/h2&gt;
+&lt;figure class=&quot;figure&quot;&gt;
+  &lt;object type=&quot;image/svg+xml&quot; data=&quot;https://pavetok.github.io/blog/what-about-case/diagrams/cases.svg&quot;&gt;&lt;/object&gt;
+  &lt;figcaption class=&quot;caption&quot;&gt;
+    Взаимодействие между кейсами
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;Начнём с постулирования того, что &lt;em&gt;кейсы&lt;/em&gt; взаимодействуют друг с другом, и зачастую их
+&lt;em&gt;взаимодействия&lt;/em&gt; протекают без видимого контакта.&lt;/p&gt;
+&lt;p&gt;Взаимодействия между кейсами осуществляются посредством действий-реакций &lt;em&gt;действующих лиц&lt;/em&gt;,
+разные типы которых по сути являются разными протоколами двустороннего (или
+многостороннего) приёма-передачи &lt;em&gt;информации&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Кейсы взаимодействуют со множеством других кейсов одновременно. В рамках одних взаимодействий
+они принимают информацию, в рамках других - передают. Переизбыток информации может приводить к
+отказам (например, к отказам нехватки памяти). Совокупность информации по всем взаимодействиям
+определяет сохранение-изменение &lt;em&gt;состояния&lt;/em&gt; кейса во &lt;em&gt;времени&lt;/em&gt;.&lt;/p&gt;
+&lt;h2&gt;Итого&lt;/h2&gt;
+&lt;table&gt;
+  &lt;caption&gt;Соответствия между вещами и кейсами&lt;/caption&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th scope=&quot;col&quot;&gt;&lt;/th&gt;
+      &lt;th scope=&quot;col&quot;&gt;Вещи&lt;/th&gt;
+      &lt;th scope=&quot;col&quot;&gt;Кейсы&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th scope=&quot;row&quot;&gt;Действуют-реагируют&lt;/th&gt;
+      &lt;td&gt;Физические силы&lt;/td&gt;
+      &lt;td&gt;Действующие лица&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th scope=&quot;row&quot;&gt;Принимают-передают&lt;/th&gt;
+      &lt;td&gt;Энергию&lt;/td&gt;
+      &lt;td&gt;Информацию&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th scope=&quot;row&quot;&gt;Сохраняют-изменяют&lt;/th&gt;
+      &lt;td&gt;Место в пространстве&lt;/td&gt;
+      &lt;td&gt;Состояние во времени&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr class=&quot;solid&quot; /&gt;
+&lt;p&gt;[1]: Понятие вещи здесь используется как синоним понятия физического тела.&lt;/p&gt;
+</content>
+  </entry>
 </feed>
