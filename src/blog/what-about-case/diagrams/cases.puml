@@ -1,0 +1,16 @@
+@startuml
+!include ../../../styles.puml!transaction
+
+card "Кейс 1" as object1 {
+    circle "действие" as action1 <<лицо>>
+}
+
+card "Кейс 2" as object2 {
+    circle "реакция" as action2 <<лицо>>
+}
+
+cloud "взаимодействие" as interaction
+
+action1 --> interaction: информация
+interaction <-- action2: информация
+@enduml

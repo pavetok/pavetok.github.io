@@ -1,14 +1,14 @@
 ---
-pagination:
-  data: work.transaction-types.queue-example
-  size: 1
-  alias: fig
-  addAllPagesToCollections: true
 layout: base.html
-permalink: "{{ page.filePathStem }}/{{ fig.title | slug }}/index.html"
+pagination:
+  data: assets.work.transactionTypes.queueExample.diagrams.files
+  size: 1
+  alias: file
+  addAllPagesToCollections: true
+permalink: "{{ page.filePathStem }}/{{ file | name | slugify }}/"
 eleventyComputed:
-  title: "{{ fig.title }}"
+  title: "{{ file | name | humanize }}"
 ---
 {%- import "components/article.html" as article -%}
 
-{{ article.figure(fig.path) }}
+{{ article.diagram("../../diagrams/" + file) }}

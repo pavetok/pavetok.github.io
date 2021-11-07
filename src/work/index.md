@@ -1,8 +1,8 @@
 ---
-layout: article.html
+layout: base.html
 eleventyNavigation:
   key: Проекты
-  order: 1
+  order: 3
 # data
 title: Мои проекты
 ---
