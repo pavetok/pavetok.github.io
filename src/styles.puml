@@ -23,6 +23,11 @@ skinparam card {
     BackgroundColor 0
 }
 
+skinparam cloud {
+    BorderThickness 0.5
+    BackgroundColor 0
+}
+
 skinparam label {
     FontSize 0
 }
