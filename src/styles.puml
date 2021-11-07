@@ -1,0 +1,29 @@
+@startuml(id=session)
+skinparam card {
+    BorderThickness 0.5
+    BackgroundColor 0
+    RoundCorner 50
+    FontSize 20
+}
+
+skinparam legend {
+    FontStyle bold
+}
+
+skinparam caption {
+    FontStyle italic
+}
+@enduml
+
+@startuml(id=transaction)
+left to right direction
+
+skinparam card {
+    BorderThickness 0.5
+    BackgroundColor 0
+}
+
+skinparam label {
+    FontSize 0
+}
+@enduml
