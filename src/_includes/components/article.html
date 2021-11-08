@@ -19,12 +19,21 @@
 
 {% macro diagram(path) %}
 <figure class="figure">
-  <object type="image/svg+xml" data="{{ path }}"></object>
+  <object type="image/svg+xml" data="{{ path | mandatory }}"></object>
   {% if caller %}
   <figcaption class="caption">
     {{ caller() }}
   </figcaption>
   {% endif %}
+</figure>
+{% endmacro %}
+
+{% macro figure(path) %}
+<figure class="figure">
+  <img src="{{ path | mandatory }}" alt="{{ caller() | mandatory }}">
+  <figcaption class="caption">
+    {{ caller() }}
+  </figcaption>
 </figure>
 {% endmacro %}
 

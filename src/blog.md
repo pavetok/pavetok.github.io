@@ -7,6 +7,6 @@ title: Мой блог
 ---
 {%- import "components/article.html" as article -%}
 
-{% for post in collections.blog | reverse %}
+{% for post in collections.posts | reverse %}
 {{ article.suggestion(post) }}
 {% endfor %}

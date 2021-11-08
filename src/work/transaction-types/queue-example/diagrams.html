@@ -8,6 +8,7 @@ pagination:
 permalink: "{{ page.filePathStem }}/{{ file | name | slugify }}/"
 eleventyComputed:
   title: "{{ file | name | humanize }}"
+date: 2021-11-07
 ---
 {%- import "components/article.html" as article -%}
 

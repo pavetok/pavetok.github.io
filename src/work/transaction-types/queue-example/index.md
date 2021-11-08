@@ -4,7 +4,8 @@ title: Простейший пример с очередью
 teaser: Простейший пример передачи и получения доступа к некоторому ресурсу
 cover:
   path: diagrams/queue-example/transaction-before.svg
-tags: [project, transaction]
+date: 2021-11-07
+tags: [transactionTypes, publications]
 ---
 {%- import "components/article.html" as article -%}
 

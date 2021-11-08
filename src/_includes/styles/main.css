@@ -10,7 +10,7 @@ html {
   max-width: 70ch;
   padding: 1em;
   margin: 0 auto;
-  line-height: 1.75;
+  line-height: 1.5;
   font-size: 1.25em;
 }
 
@@ -46,10 +46,12 @@ main {
   overflow-x: auto;
 }
 
-.figure > .caption {
+.caption {
   text-align: center;
   font-size: .9em;
   font-style: italic;
+  color: dimgrey;
+  margin: .5em 0;
 }
 
 .suggestion > .title {
@@ -60,7 +62,7 @@ main {
 .suggestion > .teaser {
   line-height: 1em;
   font-size: .85em;
-  color: grey;
+  color: dimgrey;
   margin: 0;
 }
 
@@ -107,9 +109,6 @@ td {
 
 table caption {
   caption-side: bottom;
-  font-style: italic;
-  text-align: center;
-  font-size: .9em;
 }
 
 hr {

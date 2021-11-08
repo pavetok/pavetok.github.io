@@ -4,6 +4,8 @@ eleventyNavigation:
   key: Главная
   order: 1
 title: Главная
+date: 2021-11-07
+tags: [index]
 ---
 {%- import "components/article.html" as article -%}
 
@@ -22,7 +24,7 @@ security) и тонной других около айтишных тем. Та�
 С остальными постами можно познакомиться в [блоге](/blog/) либо
 подписаться на рассылку по [RSS](/feed.xml).
 
-{% for page in collections.blog | reverse | limit(3) %}
+{% for page in collections.posts | reverse | limit(3) %}
 <ul>
   <li>
     {{ article.suggestion(page) }}
@@ -34,7 +36,7 @@ security) и тонной других около айтишных тем. Та�
 
 С остальными публикациями можно познакомиться в разделе [проектов](/work/).
 
-{% for page in collections.project | reverse | limit(3) %}
+{% for page in collections.publications | reverse | limit(3) %}
 <ul>
   <li>
     {{ article.suggestion(page) }}
