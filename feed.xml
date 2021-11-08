@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Сайт Павла Ветохина</title>
-  <subtitle>Размышления о разработке, workflow движках, институциональной экономике и многом другом</subtitle>
+  <subtitle>Размышления о разработке, workflow-движках, институциональной экономике и многом другом</subtitle>
   <link href="https://pavetok.github.io/feed.xml" rel="self"/>
   <link href="https://pavetok.github.io"/>
-  <updated>2021-11-07T19:28:48Z</updated>
-  <id>https://pavetok.github.io</id>
+  <updated>2021-11-07T00:00:00Z</updated>
+  <id>https://pavetok.github.io/</id>
   <author>
     <name>Павел Ветохин</name>
   </author>
@@ -20,7 +20,7 @@
 &lt;/figure&gt;
 &lt;h2&gt;Вещи&lt;/h2&gt;
 &lt;figure class=&quot;figure&quot;&gt;
-  &lt;object type=&quot;image/svg+xml&quot; data=&quot;https://pavetok.github.io/blog/what-about-case/diagrams/things.svg&quot;&gt;&lt;/object&gt;
+  &lt;img src=&quot;https://pavetok.github.io/blog/what-about-case/diagrams/things.svg&quot; alt=&quot;Взаимодействие между вещами&quot; /&gt;
   &lt;figcaption class=&quot;caption&quot;&gt;
     Взаимодействие между вещами
   &lt;/figcaption&gt;
@@ -38,7 +38,7 @@
 определяет сохранение-изменение занимаемого вещью &lt;em&gt;места&lt;/em&gt; в &lt;em&gt;пространстве&lt;/em&gt;.&lt;/p&gt;
 &lt;h2&gt;Кейсы&lt;/h2&gt;
 &lt;figure class=&quot;figure&quot;&gt;
-  &lt;object type=&quot;image/svg+xml&quot; data=&quot;https://pavetok.github.io/blog/what-about-case/diagrams/cases.svg&quot;&gt;&lt;/object&gt;
+  &lt;img src=&quot;https://pavetok.github.io/blog/what-about-case/diagrams/cases.svg&quot; alt=&quot;Взаимодействие между кейсами&quot; /&gt;
   &lt;figcaption class=&quot;caption&quot;&gt;
     Взаимодействие между кейсами
   &lt;/figcaption&gt;
@@ -50,11 +50,13 @@
 многостороннего) приёма-передачи &lt;em&gt;информации&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;Кейсы взаимодействуют со множеством других кейсов одновременно. В рамках одних взаимодействий
 они принимают информацию, в рамках других - передают. Переизбыток информации может приводить к
-отказам (например, к отказам нехватки памяти). Совокупность информации по всем взаимодействиям
+отказам (например, к деградации обслуживания). Совокупность информации по всем взаимодействиям
 определяет сохранение-изменение &lt;em&gt;состояния&lt;/em&gt; кейса во &lt;em&gt;времени&lt;/em&gt;.&lt;/p&gt;
 &lt;h2&gt;Итого&lt;/h2&gt;
 &lt;table&gt;
-  &lt;caption&gt;Соответствия между вещами и кейсами&lt;/caption&gt;
+  &lt;caption class=&quot;caption&quot;&gt;
+    Соответствия между вещами и кейсами
+  &lt;/caption&gt;
   &lt;thead&gt;
     &lt;tr&gt;
       &lt;th scope=&quot;col&quot;&gt;&lt;/th&gt;
