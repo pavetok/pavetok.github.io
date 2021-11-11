@@ -3,7 +3,7 @@ layout: article.html
 title: Простейший пример с очередью
 teaser: Простейший пример передачи и получения доступа к некоторому ресурсу
 cover:
-  path: diagrams/queue-example/transaction-before.svg
+  path: diagrams/transaction-before.svg
   cap: Перед трансакцией
 date: 2021-11-07
 tags: [transactionTypes, publications]
@@ -16,8 +16,8 @@ tags: [transactionTypes, publications]
 Боб в некоторый момент может получить доступ к очереди.
 {%- endcall %}
 
-{% call article.diagram("diagrams/transaction-before.svg") -%}
-Перед трансакцией
+{% call article.diagram(cover.path) -%}
+{{ cover.cap }}
 {%- endcall %}
 
 {% call article.text() -%}
