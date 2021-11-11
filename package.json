@@ -12,6 +12,7 @@
     "@sindresorhus/slugify": "^1.1.0",
     "camelcase": "^6.2.0",
     "clean-css": "^5.2.2",
-    "humanize-string": "^2.1.0"
+    "humanize-string": "^2.1.0",
+    "superstruct": "^0.15.3"
   }
 }

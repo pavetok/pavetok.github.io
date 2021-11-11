@@ -1,10 +1,10 @@
 const CleanCSS = require("clean-css");
 const { DateTime } = require("luxon");
-const assert = require("assert");
 const markdownIt = require("markdown-it");
 const path = require('path');
 const slugify = require('@sindresorhus/slugify')
 const humanize = require('humanize-string');
+const { assert, any, string, nonempty, max, size, optional, type, union } = require('superstruct');
 
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const rssPlugin = require("@11ty/eleventy-plugin-rss");
@@ -17,14 +17,19 @@ module.exports = eleventyConfig => {
     return new CleanCSS({}).minify(code).styles;
   });
 
-  eleventyConfig.addFilter("postDate", (dateObj) => {
+  eleventyConfig.addFilter("postDate", dateObj => {
     return DateTime.fromJSDate(dateObj, {
         zone: "Europe/Moscow",
     }).setLocale('ru').toLocaleString(DateTime.DATE_FULL);
   });
 
-  eleventyConfig.addFilter("mandatory", function(value) {
-    assert.ok(value);
+  eleventyConfig.addFilter("req", value => {
+    assert(value, union([string(), type({})]));
+    return value;
+  });
+
+  eleventyConfig.addFilter("max", (value, length) => {
+    assert(value, optional(size(any(), 0, length)));
     return value;
   });
 
@@ -32,7 +37,7 @@ module.exports = eleventyConfig => {
     html: true,
   });
 
-  eleventyConfig.addPairedShortcode("markdown", (content) => {
+  eleventyConfig.addPairedShortcode("markdown", content => {
     return md.render(content);
   });
 
