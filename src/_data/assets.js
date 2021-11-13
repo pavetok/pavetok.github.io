@@ -31,6 +31,5 @@ function isAssetFile(dirent) {
 module.exports = function() {
   const rootDir = path.resolve(__dirname, '..');
   const assets = getAssets(rootDir);
-//  console.log(assets);
   return assets;
 };

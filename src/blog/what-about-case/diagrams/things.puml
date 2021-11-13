@@ -1,11 +1,11 @@
 @startuml
 !include ../../../styles.puml!transaction
 
-card "Тело 1" as object1 {
+card "Вещь 1" as object1 {
     circle "действие" as action1 <<сила>>
 }
 
-card "Тело 2" as object2 {
+card "Вещь 2" as object2 {
     circle "реакция" as action2 <<сила>>
 }
 

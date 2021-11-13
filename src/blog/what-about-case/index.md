@@ -9,13 +9,14 @@ cover:
   cap: Вещи и кейсы в пространстве и времени
 date: 2021-11-07
 ---
-{%- import "components/article.html" as article -%}
+{%- import "components/page.html" as page -%}
+{%- import "components/section.html" as section -%}
 
-{{ article.cover(cover) }}
+{{ page.cover(cover) }}
 
-## Вещи
+{{ section.title("Вещи") }}
 
-{% call article.figure("diagrams/things.svg") -%}  
+{% call section.figure("diagrams/things.svg") -%}  
 Взаимодействие между вещами  
 {%- endcall %}
 
@@ -34,9 +35,9 @@ date: 2021-11-07
 отказам (например, к необратимым деформациям). Совокупность энергии по всем взаимодействиям
 определяет сохранение-изменение занимаемого вещью _места_ в _пространстве_.
 
-## Кейсы
+{{ section.title("Кейсы") }}
 
-{% call article.figure("diagrams/cases.svg") -%}  
+{% call section.figure("diagrams/cases.svg") -%}  
 Взаимодействие между кейсами  
 {%- endcall %}
 
@@ -52,7 +53,7 @@ _взаимодействия_ протекают без видимого кон
 отказам (например, к деградации обслуживания). Совокупность информации по всем взаимодействиям
 определяет сохранение-изменение _состояния_ кейса во _времени_.
 
-## Итого
+{{ section.title("Итого") }}
 
 <table>
   <caption class="caption">

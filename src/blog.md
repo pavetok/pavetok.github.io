@@ -3,10 +3,10 @@ layout: base.html
 eleventyNavigation:
   key: Блог
   order: 2
-title: Мой блог
+title: Блог
 ---
-{%- import "components/article.html" as article -%}
+{%- import "components/post.html" as post -%}
 
-{% for post in collections.posts | reverse %}
-{{ article.suggestion(post) }}
+{% for page in collections.posts | reverse %}
+{{ post.suggestion(page) }}
 {% endfor %}

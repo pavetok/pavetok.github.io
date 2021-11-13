@@ -3,10 +3,10 @@ layout: base.html
 eleventyNavigation:
   key: Проекты
   order: 3
-title: Мои проекты
+title: Проекты
 ---
-{%- import "components/article.html" as article -%}
+{%- import "components/page.html" as page -%}
 
 {% for project in collections.projects %}
-{{ article.suggestion(project) }}
+{{ page.suggestion(project) }}
 {% endfor %}

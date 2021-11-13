@@ -1,0 +1,14 @@
+{% macro suggestion(post) %}
+<article class="suggestion">
+  <h3 class="title">
+    <a href="{{ post.url }}">{{ post.data.title }}</a>
+  </h3>
+  —
+  <time class="date" datetime="{{ post.date.toISOString() }}">
+    {{ post.date | postDate }}
+  </time>
+  <div class="teaser">
+    {{ post.data.teaser }}
+  </div>
+</article>
+{% endmacro %}

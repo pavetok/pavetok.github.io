@@ -14,6 +14,10 @@ html {
   font-size: 1.25em;
 }
 
+#main-menu {
+  margin-bottom: 1.5em;
+}
+
 #main-menu li {
   display: inline;
   margin-right: 1em;
@@ -26,18 +30,34 @@ html {
   text-decoration: none;
 }
 
-main {
-  text-align: justify;
-}
-
 .title > a {
   text-decoration: none;
 }
 
-.article > .title {
-  text-align: center;
+.title {
   margin-top: 1em;
+  font-size: 1.7em; /* h1 */
   margin-bottom: .5em;
+}
+
+.subtitle {
+  margin-top: .9em;
+  font-size: 1.4em; /* h2 */
+  margin-bottom: .4em;
+}
+
+.suggestion > .title {
+  display: inline-block;
+  line-height: 1em;
+  margin-top: 0;
+  font-size: 1.1em; /* h3 */
+  margin-bottom: .3em;
+}
+
+.suggestion > .teaser {
+  line-height: 1em;
+  font-size: .9em;
+  color: dimgrey;
 }
 
 .figure {
@@ -54,18 +74,6 @@ main {
   margin: .5em 0;
 }
 
-.suggestion > .title {
-  line-height: 1em;
-  margin: .5em 0;
-}
-
-.suggestion > .teaser {
-  line-height: 1em;
-  font-size: .85em;
-  color: dimgrey;
-  margin: 0;
-}
-
 .cover {
   text-align: center;
   overflow-x: auto;
@@ -76,11 +84,9 @@ main {
 }
 
 table {
-  max-width: 100%;
-  border-collapse: collapse;
+  width: 100%;
   table-layout: fixed;
-  white-space: nowrap;
-  margin: 0 auto;
+  border-collapse: collapse;
 }
 
 td,

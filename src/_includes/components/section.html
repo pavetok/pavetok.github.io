@@ -1,0 +1,14 @@
+{% macro title(text) %}
+<h2 class="subtitle">
+  {{ text }}
+</h2>
+{% endmacro %}
+
+{% macro figure(path) %}
+<figure class="figure">
+  <img src="{{ path | req }}" alt="{{ caller().val | req }}">
+  <figcaption class="caption">
+    {{ caller() }}
+  </figcaption>
+</figure>
+{% endmacro %}

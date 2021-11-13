@@ -4,8 +4,8 @@ title: Трансакционные типы
 teaser: Нотация и примеры описания трансакций
 tags: [projects]
 ---
-{%- import "components/article.html" as article -%}
+{%- import "components/page.html" as page -%}
 
-{% for publication in collections.transactionTypes %}
-{{ article.suggestion(publication) }}
+{% for article in collections.transactionTypes %}
+{{ page.suggestion(article) }}
 {% endfor %}

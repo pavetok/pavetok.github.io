@@ -1,0 +1,16 @@
+{% macro suggestion(page) %}
+<article class="suggestion">
+  <h3 class="title">
+    <a href="{{ page.url }}">{{ page.data.title }}</a>
+  </h3>
+  <div class="teaser">
+    {{ page.data.teaser }}
+  </div>
+</article>
+{% endmacro %}
+
+{% macro cover(pic) %}
+<figure class="cover">
+  <img src="{{ pic.path | req }}" alt="{{ pic.cap | req }}">
+</figure>
+{% endmacro %}

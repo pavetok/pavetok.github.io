@@ -1,3 +1,7 @@
 {
-  "tags": ["index"]
+  "tags": ["index"],
+  "project": {
+    "title": "Трансакционные типы",
+    "url": "/work/transaction-types/"
+  }
 }
