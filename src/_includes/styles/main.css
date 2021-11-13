@@ -99,6 +99,7 @@ table {
 td,
 th {
   padding: .5em;
+  font-size: calc(.4em + 1.6vmin);
 }
 
 thead th {
