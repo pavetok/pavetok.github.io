@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Сайт Павла Ветохина</title>
+  <title>Трансакцинация</title>
   <subtitle>Размышления о разработке, workflow-движках, институциональной экономике и многом другом</subtitle>
   <link href="https://pavetok.github.io/feed.xml" rel="self"/>
   <link href="https://pavetok.github.io"/>
@@ -18,7 +18,9 @@
     <content type="html">&lt;figure class=&quot;cover&quot;&gt;
   &lt;img src=&quot;https://pavetok.github.io/blog/what-about-case/things-and-cases.png&quot; alt=&quot;Вещи и кейсы в пространстве и времени&quot; /&gt;
 &lt;/figure&gt;
-&lt;h2&gt;Вещи&lt;/h2&gt;
+&lt;h2 class=&quot;subtitle&quot;&gt;
+  Вещи
+&lt;/h2&gt;
 &lt;figure class=&quot;figure&quot;&gt;
   &lt;img src=&quot;https://pavetok.github.io/blog/what-about-case/diagrams/things.svg&quot; alt=&quot;Взаимодействие между вещами&quot; /&gt;
   &lt;figcaption class=&quot;caption&quot;&gt;
@@ -36,7 +38,9 @@
 они принимают энергию, в рамках других - передают. Переизбыток энергии может приводить к
 отказам (например, к необратимым деформациям). Совокупность энергии по всем взаимодействиям
 определяет сохранение-изменение занимаемого вещью &lt;em&gt;места&lt;/em&gt; в &lt;em&gt;пространстве&lt;/em&gt;.&lt;/p&gt;
-&lt;h2&gt;Кейсы&lt;/h2&gt;
+&lt;h2 class=&quot;subtitle&quot;&gt;
+  Кейсы
+&lt;/h2&gt;
 &lt;figure class=&quot;figure&quot;&gt;
   &lt;img src=&quot;https://pavetok.github.io/blog/what-about-case/diagrams/cases.svg&quot; alt=&quot;Взаимодействие между кейсами&quot; /&gt;
   &lt;figcaption class=&quot;caption&quot;&gt;
@@ -52,7 +56,9 @@
 они принимают информацию, в рамках других - передают. Переизбыток информации может приводить к
 отказам (например, к деградации обслуживания). Совокупность информации по всем взаимодействиям
 определяет сохранение-изменение &lt;em&gt;состояния&lt;/em&gt; кейса во &lt;em&gt;времени&lt;/em&gt;.&lt;/p&gt;
-&lt;h2&gt;Итого&lt;/h2&gt;
+&lt;h2 class=&quot;subtitle&quot;&gt;
+  Итого
+&lt;/h2&gt;
 &lt;table&gt;
   &lt;caption class=&quot;caption&quot;&gt;
     Соответствия между вещами и кейсами
