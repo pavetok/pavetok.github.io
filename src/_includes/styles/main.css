@@ -20,7 +20,7 @@ html {
 
 #main-menu li {
   display: inline;
-  margin-right: .8em;
+  margin-right: 2.5vmin;
 }
 
 .menu-item a {
@@ -54,7 +54,7 @@ html {
   margin-bottom: .3em;
 }
 
-.suggestion > .teaser {
+.teaser {
   line-height: 1em;
   font-size: .9em;
   color: dimgrey;

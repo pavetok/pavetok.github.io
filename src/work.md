@@ -7,6 +7,14 @@ title: Проекты
 ---
 {%- import "components/page.html" as page -%}
 
-{% for project in collections.projects %}
-{{ page.suggestion(project) }}
-{% endfor %}
+{%- for key, project in projects -%}
+  {%- call page.section(project) -%}
+    {%- for article in collections[key] -%}
+      <ul>
+        <li>
+          {{ page.suggestion(article) -}}
+        </li>
+      </ul>
+    {%- endfor -%}
+  {%- endcall -%}
+{%- endfor -%}

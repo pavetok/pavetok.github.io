@@ -21,26 +21,26 @@ security) и тонной других около айтишных тем. Та�
 
 {{ section.title("Самые свежие посты") }}
 
-{% for page in collections.posts | reverse | limit(3) %}
+{%- for page in collections.posts | reverse | limit(3) -%}
 <ul>
   <li>
     {{ post.suggestion(page) }}
   </li>
 </ul>
-{% endfor %}
+{%- endfor %}
 
 Остальные посты можно найти в [блоге](/blog/) либо
 подписаться на рассылку по [RSS](/feed.xml).
 
 {{ section.title("Самые свежие публикации") }}
 
-{% for page in collections.publications | reverse | limit(3) %}
+{%- for page in collections.articles | reverse | limit(3) -%}
 <ul>
   <li>
-    {{ article.suggestion(page) }}
+    {{ article.suggestion(page, projects[page.data.project]) }}
   </li>
 </ul>
-{% endfor %}
+{%- endfor %}
 
 Остальные публикации можно найти в разделе [проектов](/work/).
 

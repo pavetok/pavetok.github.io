@@ -1,11 +1,11 @@
-{% macro suggestion(article) %}
+{% macro suggestion(article, project) %}
 <article class="suggestion">
   <h3 class="title">
     <a href="{{ article.url }}">{{ article.data.title }}</a>
   </h3>
   —
   <span class="project">
-    <a href="{{ article.data.project.url }}">{{ article.data.project.title }}</a>
+    {{ project.title }}
   </span>
   <div class="teaser">
     {{ article.data.teaser }}

@@ -4,21 +4,19 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+
   {% set styles %}{% include "styles/main.css" %}{% endset -%}
   <style>{{ styles | minify | safe }}</style>
 
-  {%set pageTitle %}{{ title | req | max(70) }} - {{ site.title }}{% endset -%}
-
+  {% set pageTitle %}{{ title | req | max(70) }} - {{ site.title }}{% endset -%}
   <title>{{ pageTitle }}</title>
 
-  {%set pageTeaser %}{{ teaser or site.teaser | req | max(120) }}{% endset -%}
-
+  {% set pageTeaser %}{{ teaser or site.teaser | req | max(120) }}{% endset -%}
   <meta name="description" content="{{ pageTeaser }}">
   <meta name="robots" content="index,follow">
   <meta name="author" content="{{ site.author }}">
 
-  {%set pageUrl %}{{ site.url }}{{ page.url | url }}{% endset -%}
-
+  {% set pageUrl %}{{ site.url }}{{ page.url | url }}{% endset -%}
   <link rel="canonical" href="{{ pageUrl }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ site.url }}/feed.xml">
 
@@ -26,18 +24,17 @@
   <meta property="og:description" content="{{ pageTeaser }}">
   <meta property="og:url" content="{{ pageUrl }}">
 
-  {% if cover %}
+  {% if cover -%}
   <meta property="og:image" content="{{ pageUrl }}{{ cover.path | req }}">
   <meta property="og:image:alt" content="{{ cover.cap | req | max(420) }}">
   {% endif -%}
-
   <meta property="og:type" content="article">
   <meta name="twitter:card" content="summary">
 </head>
 <body>
-{% include "partials/header.html" %}
-<main id="content">
-  {{ content | safe }}
-</main>
+  {%- include "partials/header.html" -%}
+  <main id="content">
+    {{ content | safe -}}
+  </main>
 </body>
 </html>

@@ -6,7 +6,7 @@ cover:
   path: diagrams/transaction-before.svg
   cap: Перед трансакцией
 date: 2021-11-07
-tags: [transactionTypes, publications]
+tags: [transactionTypes, articles]
 ---
 {%- import "components/article.html" as article -%}
 
