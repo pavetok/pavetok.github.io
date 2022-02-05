@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+
+  <style>#main-menu ul,figure{margin:0;padding:0;border:0}html{max-width:70ch;padding:1em;margin:0 auto;line-height:1.5;font-size:1.25em}ol{margin:0}#main-menu{margin-bottom:1.5em}#main-menu li{display:inline;margin-right:2.5vmin}.menu-item a{color:#00f;cursor:pointer;font-size:calc(1em + 1.5vmin);text-decoration:none}.title>a{text-decoration:none}.title{margin-top:1em;font-size:1.7em;margin-bottom:.5em}.subtitle{margin-top:.9em;font-size:1.4em;margin-bottom:.4em}.suggestion>.title{display:inline-block;line-height:1em;margin-top:0;font-size:1.1em;margin-bottom:.3em}.teaser{line-height:1em;font-size:.9em;color:#696969}.figure{text-align:center;margin:1.5em 0;overflow-x:auto}.caption{text-align:center;font-size:.9em;font-style:italic;color:#696969;margin:.5em 0}.cover{text-align:center;overflow-x:auto}.post .info{margin:1em 0}table{width:100%;table-layout:fixed;border-collapse:collapse}table,td,th,tr{border:.1em solid #d3d3d3}td,th{padding:.5em;font-size:calc(.4em + 1.6vmin)}thead th{text-align:center}th{background:#f5f5f5}td{text-align:center}td.list{text-align:left}table caption{caption-side:bottom}hr{margin-top:2em}</style>
+
+  <title>Азы кейс-дизайна и рыбной ловли - Трансакцинация</title>
+
+  <meta name="description" content="Кейс-дизайн на примере сложной, но увлекательной предметной области">
+  <meta name="robots" content="index,follow">
+  <meta name="author" content="Павел Ветохин">
+
+  <link rel="canonical" href="https://pavetok.github.io/blog/case-design-and-fishing/">
+  <link rel="alternate" type="application/rss+xml" title="Трансакцинация" href="https://pavetok.github.io/feed.xml">
+
+  <meta property="og:title" content="Азы кейс-дизайна и рыбной ловли - Трансакцинация">
+  <meta property="og:description" content="Кейс-дизайн на примере сложной, но увлекательной предметной области">
+  <meta property="og:url" content="https://pavetok.github.io/blog/case-design-and-fishing/">
+
+  <meta property="og:image" content="https://pavetok.github.io/blog/case-design-and-fishing/boring-fish.jpg">
+  <meta property="og:image:alt" content="Выражение \&quot;лица\&quot; рыбы, которая хорошо спряталась, но её всё равно поймали">
+  <meta property="og:type" content="article">
+  <meta name="twitter:card" content="summary">
+</head>
+<body><header>
+  <nav id="main-menu">
+    <ul>
+      <li class="menu-item">
+        <a href="/">Главная</a>
+      </li>
+      <li class="menu-item">
+        <a href="/blog/">Блог</a>
+      </li>
+      <li class="menu-item">
+        <a href="/work/">Проекты</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+<main id="content">
+    <article class="post">
+  <h1 class="title">
+    Азы кейс-дизайна и рыбной ловли
+  </h1>
+  <section class="info">
+    <time class="date" datetime="2022-02-05T00:00:00.000Z">
+      5 февраля 2022 г.
+    </time>
+  </section>
+  <figure class="cover">
+  <img src="boring-fish.jpg" alt="Выражение \&quot;лица\&quot; рыбы, которая хорошо спряталась, но её всё равно поймали">
+</figure>
+<p>Выбор <em>подачи</em>, выбор <em>места/времени</em> и выбор <em>приманки</em> - ключевые аспекты любой рыбалки.
+Мы подробно разберем тему выбора подачи, немного затронем тему выбора места/времени и
+практически не затронем тему выбора приманки.</p>
+<p>Любой кейс-дизайн начинается с <em>вариантивности</em>.</p>
+<h2 class="subtitle">
+  Вариативность и кейсы
+</h2>
+<p>Вариативность можно начинать набрасывать с любого конца. Обычно всё начинается откуда-то с середины.
+Берем любой <em>параметр</em><sup>1</sup>, который может варьироваться и пытаемся
+перечислить для него все известные нам варианты <em>значений</em><sup>2</sup>.</p>
+<p>Одним из ключевых параметров для подачи является <em>тип водоёма</em>.
+Бывают водоёмы со стоячей водой, а бывают - с течением.
+В стоячих водоёмах рыба, как правило, передвигается в поисках корма.
+В водоёмах с течением рыба зачастую стоит в ожидании проплывающего корма.</p>
+<table>
+  <tbody>
+    <tr>
+      <th scope="row">Тип водоёма</th>
+      <td class="list">
+        <ol>
+          <li>Со стоячей водой</li>
+          <li>С течением</li>
+        </ol>
+      </td>
+    </tr>
+  </tbody>
+  <caption class="caption">
+    Вариантивность для одного параметра
+  </caption>
+</table>
+<p>Следующим важным параметром является <em>тип кормового объекта</em>.
+Кормовой объект может быть активным или пассивным.
+Активные объекты способны перемещаться самостоятельно, а также
+сопротивляться потоку. Пассивные - наоборот.</p>
+<table>
+  <tbody>
+    <tr>
+      <th scope="row">Тип водоёма</th>
+      <td class="list">
+        <ol>
+          <li>Со стоячей водой</li>
+          <li>С течением</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">Тип кормового объекта</th>
+      <td class="list">
+        <ol>
+          <li>Активный</li>
+          <li>Пассивный</li>
+        </ol>
+      </td>
+    </tr>
+  </tbody>
+  <caption class="caption">
+    Вариантивность для двух параметров
+  </caption>
+</table>
+<p>Last but not least параметром является <em>горизонт кормёжки</em>.
+Обычно рыба кормится в определенном водном горизонте и не покидает его границ.
+Время от времени (или от места к месту) горизонт кормёжки может меняться, но об этом позже.</p>
+<table>
+  <tbody>
+    <tr>
+      <th scope="row">Тип водоёма</th>
+      <td class="list">
+        <ol>
+          <li>Со стоячей водой</li>
+          <li>С течением</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">Тип кормового объекта</th>
+      <td class="list">
+        <ol>
+          <li>Активный</li>
+          <li>Пассивный</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">Горизонт кормёжки</th>
+      <td class="list">
+        <ol>
+          <li>С поверхности</li>
+          <li>Под поверхностью</li>
+          <li>В толще</li>
+          <li>В придонном слое</li>
+          <li>Со дна</li>
+        </ol>
+      </td>
+    </tr>
+  </tbody>
+  <caption class="caption">
+    Базовая вариантивность
+  </caption>
+</table>
+<p>Получив некоторую базовую вариативность пробуем набросать кейсы.
+Для этого мы просто механически выписываем все возможные сочетания значений из разных разрезов.
+Начинать удобнее всего с наиболее селективных разрезов, в которых меньше всего вариантов.</p>
+<table>
+  <thead>
+    <tr>
+      <th scope="col">Тип водоёма</th>
+      <th scope="col">Тип кормового объекта</th>
+      <th scope="col">Горизонт кормёжки</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="10">Со стоячей водой</td>
+      <td rowspan="5">Активный</td>
+      <td>С поверхности</td>
+    </tr>
+    <tr>
+      <td>Под поверхностью</td>
+    </tr>
+    <tr>
+      <td>В толще</td>
+    </tr>
+    <tr>
+      <td>В придонном слое</td>
+    </tr>
+    <tr>
+      <td>Со дна</td>
+    </tr>
+    <tr>
+      <td rowspan="5">Пассивный</td>
+      <td>С поверхности</td>
+    </tr>
+    <tr>
+      <td>Под поверхностью</td>
+    </tr>
+    <tr>
+      <td>В толще</td>
+    </tr>
+    <tr>
+      <td>В придонном слое</td>
+    </tr>
+    <tr>
+      <td>Со дна</td>
+    </tr>
+    <tr>
+      <td rowspan="10">С течением</td>
+      <td rowspan="5">Активный</td>
+      <td>С поверхности</td>
+    </tr>
+    <tr>
+      <td>Под поверхностью</td>
+    </tr>
+    <tr>
+      <td>В толще</td>
+    </tr>
+    <tr>
+      <td>В придонном слое</td>
+    </tr>
+    <tr>
+      <td>Со дна</td>
+    </tr>
+    <tr>
+      <td rowspan="5">Пассивный</td>
+      <td>С поверхности</td>
+    </tr>
+    <tr>
+      <td>Под поверхностью</td>
+    </tr>
+    <tr>
+      <td>В толще</td>
+    </tr>
+    <tr>
+      <td>В придонном слое</td>
+    </tr>
+    <tr>
+      <td>Со дна</td>
+    </tr>
+  </tbody>
+  <caption class="caption">
+    Базовые кейсы
+  </caption>
+</table>
+<p>Всего у нас получилось 20 кейсов. Немало! Если, например, добавить в вариативность ещё один
+параметр с хотя бы двумя значениями, то кейсов станет уже 40. В рыбной ловле, как и в любой другой
+деятельности, всевозможных параметров вагон и маленькая тележка. Лавинообразный рост кейсов
+при добавлении новых параметров или значений часто называют <em>комбинаторным взрывом</em>.
+Как следствие, основная задача кейс-дизайнера - так подобрать параметры и значения,
+чтобы покрыть все важные кейсы и при этом избежать комбинаторного взрыва.</p>
+<h2 class="subtitle">
+  Ситуации и подачи
+</h2>
+<p>Мы получили 20 ситуаций, для которых требуется как минимум 20 вариантов
+подачи (для некоторых ситуаций могут существовать альтернативные подачи).</p>
+<p>В стоячих водоёмах пассивными приманками имитируют падение кормовых объектов, активными - движение.
+Как следствие, пассивные приманки обычно забрасывают в места стоянки мирной рыбы, активные - хищной.
+В зависимости от горизонта кормёжки пассивными имитируют падение на поверхность, на дно или &quot;парение&quot; в толще,
+активными - движение по/у поверхности, по/у дна или в толще.</p>
+<p>В водоёмах с течением пассивными приманками имитируют перенос кормовых объектов потоком, активными - сопротивление потоку.
+Как следствие, пассивные приманки обычно забрасывают вверх по течению, активные - вниз по течению.
+В зависимости от горизонта кормёжки пассивными имитируют перенос по/у поверхности, по/у дна или в толще,
+активными - сопротивление по/у поверхности, по/у дна или в толще.</p>
+<p>Так как же подбирать подачу? По-разному!</p>
+<p>Кто-то отталкивается от конкретного водоёма, затем уже подстраивается по снастям и приманкам.
+Кто-то отталкивается от любимой снасти, которая зачастую заточена под определенный спектр подач (aka стиль ловли).
+Кто-то отталкивается от эмоций и, например, выбирает зрелищную ловлю с поверхности или трофейную ловлю со дна.</p>
+<hr class="solid">
+<p><sup>1</sup> Иногда я буду называть такие параметры <em>разрезами</em>.<br>
+<sup>2</sup> Есть много техник выбора только важных значений, но мы не будем сейчас на этом заострять внимание.</p>
+</article>
+</main>
+</body>
+</html>

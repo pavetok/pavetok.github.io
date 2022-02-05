@@ -14,18 +14,6 @@
   </url>
 
   <url>
-    <loc>https://pavetok.github.io/work/transaction-types/queue-example/diagrams/transaction-ongoing/</loc>
-    <lastmod>2021-11-07T00:00:00.000Z</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-
-  <url>
-    <loc>https://pavetok.github.io/work/transaction-types/queue-example/diagrams/queue-client/</loc>
-    <lastmod>2021-11-07T00:00:00.000Z</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-
-  <url>
     <loc>https://pavetok.github.io/work/transaction-types/queue-example/diagrams/capability-receive/</loc>
     <lastmod>2021-11-07T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
@@ -38,7 +26,7 @@
   </url>
 
   <url>
-    <loc>https://pavetok.github.io/work/transaction-types/queue-example/diagrams/transaction-before/</loc>
+    <loc>https://pavetok.github.io/work/transaction-types/queue-example/diagrams/queue-client/</loc>
     <lastmod>2021-11-07T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
   </url>
@@ -56,8 +44,26 @@
   </url>
 
   <url>
+    <loc>https://pavetok.github.io/work/transaction-types/queue-example/diagrams/transaction-before/</loc>
+    <lastmod>2021-11-07T00:00:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://pavetok.github.io/work/transaction-types/queue-example/diagrams/transaction-ongoing/</loc>
+    <lastmod>2021-11-07T00:00:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
     <loc>https://pavetok.github.io/work/transaction-types/queue-example/</loc>
     <lastmod>2021-11-07T00:00:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://pavetok.github.io/blog/case-design-and-fishing/</loc>
+    <lastmod>2022-02-05T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
   </url>
 

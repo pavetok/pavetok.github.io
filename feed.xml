@@ -4,7 +4,7 @@
   <subtitle>Размышления о разработке, workflow-движках, институциональной экономике и многом другом</subtitle>
   <link href="https://pavetok.github.io/feed.xml" rel="self"/>
   <link href="https://pavetok.github.io"/>
-  <updated>2021-11-07T00:00:00Z</updated>
+  <updated>2022-02-05T00:00:00Z</updated>
   <id>https://pavetok.github.io/</id>
   <author>
     <name>Павел Ветохин</name>
@@ -90,6 +90,225 @@
 &lt;/table&gt;
 &lt;hr class=&quot;solid&quot; /&gt;
 &lt;p&gt;&lt;sup&gt;1&lt;/sup&gt; Понятие вещи здесь используется как синоним понятия физического тела.&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Азы кейс-дизайна и рыбной ловли</title>
+    <link href="https://pavetok.github.io/blog/case-design-and-fishing/"/>
+    <updated>2022-02-05T00:00:00Z</updated>
+    <id>https://pavetok.github.io/blog/case-design-and-fishing/</id>
+    <content type="html">&lt;figure class=&quot;cover&quot;&gt;
+  &lt;img src=&quot;https://pavetok.github.io/blog/case-design-and-fishing/boring-fish.jpg&quot; alt=&quot;Выражение \&amp;quot;лица\&amp;quot; рыбы, которая хорошо спряталась, но её всё равно поймали&quot; /&gt;
+&lt;/figure&gt;
+&lt;p&gt;Выбор &lt;em&gt;подачи&lt;/em&gt;, выбор &lt;em&gt;места/времени&lt;/em&gt; и выбор &lt;em&gt;приманки&lt;/em&gt; - ключевые аспекты любой рыбалки.
+Мы подробно разберем тему выбора подачи, немного затронем тему выбора места/времени и
+практически не затронем тему выбора приманки.&lt;/p&gt;
+&lt;p&gt;Любой кейс-дизайн начинается с &lt;em&gt;вариантивности&lt;/em&gt;.&lt;/p&gt;
+&lt;h2 class=&quot;subtitle&quot;&gt;
+  Вариативность и кейсы
+&lt;/h2&gt;
+&lt;p&gt;Вариативность можно начинать набрасывать с любого конца. Обычно всё начинается откуда-то с середины.
+Берем любой &lt;em&gt;параметр&lt;/em&gt;&lt;sup&gt;1&lt;/sup&gt;, который может варьироваться и пытаемся
+перечислить для него все известные нам варианты &lt;em&gt;значений&lt;/em&gt;&lt;sup&gt;2&lt;/sup&gt;.&lt;/p&gt;
+&lt;p&gt;Одним из ключевых параметров для подачи является &lt;em&gt;тип водоёма&lt;/em&gt;.
+Бывают водоёмы со стоячей водой, а бывают - с течением.
+В стоячих водоёмах рыба, как правило, передвигается в поисках корма.
+В водоёмах с течением рыба зачастую стоит в ожидании проплывающего корма.&lt;/p&gt;
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th scope=&quot;row&quot;&gt;Тип водоёма&lt;/th&gt;
+      &lt;td class=&quot;list&quot;&gt;
+        &lt;ol&gt;
+          &lt;li&gt;Со стоячей водой&lt;/li&gt;
+          &lt;li&gt;С течением&lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;caption class=&quot;caption&quot;&gt;
+    Вариантивность для одного параметра
+  &lt;/caption&gt;
+&lt;/table&gt;
+&lt;p&gt;Следующим важным параметром является &lt;em&gt;тип кормового объекта&lt;/em&gt;.
+Кормовой объект может быть активным или пассивным.
+Активные объекты способны перемещаться самостоятельно, а также
+сопротивляться потоку. Пассивные - наоборот.&lt;/p&gt;
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th scope=&quot;row&quot;&gt;Тип водоёма&lt;/th&gt;
+      &lt;td class=&quot;list&quot;&gt;
+        &lt;ol&gt;
+          &lt;li&gt;Со стоячей водой&lt;/li&gt;
+          &lt;li&gt;С течением&lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th scope=&quot;row&quot;&gt;Тип кормового объекта&lt;/th&gt;
+      &lt;td class=&quot;list&quot;&gt;
+        &lt;ol&gt;
+          &lt;li&gt;Активный&lt;/li&gt;
+          &lt;li&gt;Пассивный&lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;caption class=&quot;caption&quot;&gt;
+    Вариантивность для двух параметров
+  &lt;/caption&gt;
+&lt;/table&gt;
+&lt;p&gt;Last but not least параметром является &lt;em&gt;горизонт кормёжки&lt;/em&gt;.
+Обычно рыба кормится в определенном водном горизонте и не покидает его границ.
+Время от времени (или от места к месту) горизонт кормёжки может меняться, но об этом позже.&lt;/p&gt;
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th scope=&quot;row&quot;&gt;Тип водоёма&lt;/th&gt;
+      &lt;td class=&quot;list&quot;&gt;
+        &lt;ol&gt;
+          &lt;li&gt;Со стоячей водой&lt;/li&gt;
+          &lt;li&gt;С течением&lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th scope=&quot;row&quot;&gt;Тип кормового объекта&lt;/th&gt;
+      &lt;td class=&quot;list&quot;&gt;
+        &lt;ol&gt;
+          &lt;li&gt;Активный&lt;/li&gt;
+          &lt;li&gt;Пассивный&lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th scope=&quot;row&quot;&gt;Горизонт кормёжки&lt;/th&gt;
+      &lt;td class=&quot;list&quot;&gt;
+        &lt;ol&gt;
+          &lt;li&gt;С поверхности&lt;/li&gt;
+          &lt;li&gt;Под поверхностью&lt;/li&gt;
+          &lt;li&gt;В толще&lt;/li&gt;
+          &lt;li&gt;В придонном слое&lt;/li&gt;
+          &lt;li&gt;Со дна&lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;caption class=&quot;caption&quot;&gt;
+    Базовая вариантивность
+  &lt;/caption&gt;
+&lt;/table&gt;
+&lt;p&gt;Получив некоторую базовую вариативность пробуем набросать кейсы.
+Для этого мы просто механически выписываем все возможные сочетания значений из разных разрезов.
+Начинать удобнее всего с наиболее селективных разрезов, в которых меньше всего вариантов.&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th scope=&quot;col&quot;&gt;Тип водоёма&lt;/th&gt;
+      &lt;th scope=&quot;col&quot;&gt;Тип кормового объекта&lt;/th&gt;
+      &lt;th scope=&quot;col&quot;&gt;Горизонт кормёжки&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td rowspan=&quot;10&quot;&gt;Со стоячей водой&lt;/td&gt;
+      &lt;td rowspan=&quot;5&quot;&gt;Активный&lt;/td&gt;
+      &lt;td&gt;С поверхности&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Под поверхностью&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;В толще&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;В придонном слое&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Со дна&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td rowspan=&quot;5&quot;&gt;Пассивный&lt;/td&gt;
+      &lt;td&gt;С поверхности&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Под поверхностью&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;В толще&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;В придонном слое&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Со дна&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td rowspan=&quot;10&quot;&gt;С течением&lt;/td&gt;
+      &lt;td rowspan=&quot;5&quot;&gt;Активный&lt;/td&gt;
+      &lt;td&gt;С поверхности&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Под поверхностью&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;В толще&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;В придонном слое&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Со дна&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td rowspan=&quot;5&quot;&gt;Пассивный&lt;/td&gt;
+      &lt;td&gt;С поверхности&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Под поверхностью&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;В толще&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;В придонном слое&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Со дна&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;caption class=&quot;caption&quot;&gt;
+    Базовые кейсы
+  &lt;/caption&gt;
+&lt;/table&gt;
+&lt;p&gt;Всего у нас получилось 20 кейсов. Немало! Если, например, добавить в вариативность ещё один
+параметр с хотя бы двумя значениями, то кейсов станет уже 40. В рыбной ловле, как и в любой другой
+деятельности, всевозможных параметров вагон и маленькая тележка. Лавинообразный рост кейсов
+при добавлении новых параметров или значений часто называют &lt;em&gt;комбинаторным взрывом&lt;/em&gt;.
+Как следствие, основная задача кейс-дизайнера - так подобрать параметры и значения,
+чтобы покрыть все важные кейсы и при этом избежать комбинаторного взрыва.&lt;/p&gt;
+&lt;h2 class=&quot;subtitle&quot;&gt;
+  Ситуации и подачи
+&lt;/h2&gt;
+&lt;p&gt;Мы получили 20 ситуаций, для которых требуется как минимум 20 вариантов
+подачи (для некоторых ситуаций могут существовать альтернативные подачи).&lt;/p&gt;
+&lt;p&gt;В стоячих водоёмах пассивными приманками имитируют падение кормовых объектов, активными - движение.
+Как следствие, пассивные приманки обычно забрасывают в места стоянки мирной рыбы, активные - хищной.
+В зависимости от горизонта кормёжки пассивными имитируют падение на поверхность, на дно или &amp;quot;парение&amp;quot; в толще,
+активными - движение по/у поверхности, по/у дна или в толще.&lt;/p&gt;
+&lt;p&gt;В водоёмах с течением пассивными приманками имитируют перенос кормовых объектов потоком, активными - сопротивление потоку.
+Как следствие, пассивные приманки обычно забрасывают вверх по течению, активные - вниз по течению.
+В зависимости от горизонта кормёжки пассивными имитируют перенос по/у поверхности, по/у дна или в толще,
+активными - сопротивление по/у поверхности, по/у дна или в толще.&lt;/p&gt;
+&lt;p&gt;Так как же подбирать подачу? По-разному!&lt;/p&gt;
+&lt;p&gt;Кто-то отталкивается от конкретного водоёма, затем уже подстраивается по снастям и приманкам.
+Кто-то отталкивается от любимой снасти, которая зачастую заточена под определенный спектр подач (aka стиль ловли).
+Кто-то отталкивается от эмоций и, например, выбирает зрелищную ловлю с поверхности или трофейную ловлю со дна.&lt;/p&gt;
+&lt;hr class=&quot;solid&quot; /&gt;
+&lt;p&gt;&lt;sup&gt;1&lt;/sup&gt; Иногда я буду называть такие параметры &lt;em&gt;разрезами&lt;/em&gt;.&lt;br /&gt;
+&lt;sup&gt;2&lt;/sup&gt; Есть много техник выбора только важных значений, но мы не будем сейчас на этом заострять внимание.&lt;/p&gt;
 </content>
   </entry>
 </feed>
