@@ -50,6 +50,10 @@ ol {
   margin-bottom: .4em;
 }
 
+.suggestion {
+  margin: 1em 0;
+}
+
 .suggestion > .title {
   display: inline-block;
   line-height: 1em;
