@@ -48,6 +48,7 @@ module.exports = eleventyConfig => {
   eleventyConfig.addFilter("name", value => path.parse(value).name);
 
   eleventyConfig.addPassthroughCopy("src/**/*.png");
+  eleventyConfig.addPassthroughCopy("src/**/*.jpg");
 
   eleventyConfig.setDataDeepMerge(true);
 
