@@ -1,0 +1,21 @@
+@startuml
+!include ../../../../styles.puml!transaction
+
+card Alice {
+    circle "[[queue-client{queue} queue]]" as client1 <<client>>
+}
+
+card Bob {
+    circle "[[queue-client{queue} queue]]" as client2 <<client>>
+}
+
+card Carol {
+    circle "[[queue-server{queue} queue]]" as server1 <<server>>
+}
+
+card Dave {
+    circle "[[queue-server{queue} queue]]" as server2 <<server>>
+}
+
+cloud "magic" as platform
+@enduml

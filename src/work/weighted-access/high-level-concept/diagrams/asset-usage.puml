@@ -1,0 +1,102 @@
+@startuml
+left to right direction
+
+card A <<asset>>
+card B <<asset>>
+card C <<asset>>
+card Platform as P {
+  card "Matching Engine" as ME
+  card "Weight Controller" as weigher
+}
+
+B --> ME
+C --> ME
+
+ME -- weigher
+
+weigher <-- A
+@enduml
+
+@startuml
+left to right direction
+
+card Foo as f1 <<project>> {
+  card A as a1 <<asset>>
+}
+
+card Foo as f2 <<project>> {
+  card B as b1 <<asset>>
+  card C as c1 <<asset>>
+}
+
+card Platform as P {
+  card "Matching Engine" as ME
+  card "Weight Controller" as weigher
+}
+
+b1 --> ME
+c1 --> ME
+
+ME -- weigher
+
+weigher <-- a1
+
+card Foo as f3 <<project>> {
+  card A as a2 <<asset>>
+  card B as b2 <<asset>>
+  card C as c2 <<asset>>
+}
+
+a2 --> ME
+b2 --> ME
+c2 --> ME
+@enduml
+
+@startuml
+left to right direction
+
+card Platform as P {
+  card "Matching Engine" as ME
+  card "Weight Controller" as weigher
+}
+
+ME -- weigher
+
+card Foo as f3 <<project>> {
+  card A as a2 <<asset>>
+  card B as b2 <<asset>>
+  card C as c2 <<asset>>
+}
+
+card Foo as f4 <<project>> {
+  card "Продажи" as x1 <<asset>>
+}
+
+a2 --> ME
+b2 --> ME
+c2 --> ME
+
+weigher <-- x1
+@enduml
+
+@startuml
+left to right direction
+
+card Platform as P
+
+card Foo as f3 <<project>> {
+  card A as a2 <<asset>>
+  card B as b2 <<asset>>
+  card C as c2 <<asset>>
+}
+
+card Foo as f4 <<project>> {
+  card "Product" as x1 <<asset>>
+}
+
+a2 --> P: <&puzzle-piece>1
+b2 --> P: <&puzzle-piece>2
+c2 --> P: <&puzzle-piece>3
+
+P <-- x1
+@enduml

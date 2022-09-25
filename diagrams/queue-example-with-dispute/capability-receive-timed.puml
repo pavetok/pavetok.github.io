@@ -1,0 +1,15 @@
+@startuml
+!include ../styles.puml!session
+
+card "⊸" as s1
+card 1 as fin
+
+card "_" as any
+card "⊸" as s3
+
+s1 -> fin: <&timer>[[/work/transaction-types/queue-example/diagrams/queue-client/{queue} queue]]
+s1 -> fin: <&shield>[[/work/transaction-types/queue-example/diagrams/dispute-defendant/{dispute} dispute]]
+
+legend capability
+caption receive
+@enduml

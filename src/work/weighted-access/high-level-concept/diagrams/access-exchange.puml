@@ -1,0 +1,11 @@
+@startuml
+participant "Insider" as o1 <<asset owner>>
+participant Platform as broker
+participant "Outsider" as o2 <<asset owner>>
+
+o1 -> broker: buy <foo> 1
+note right
+  Инсайдер хочет конкретную емкость
+end note
+o2 -> broker: sell <foo> 1
+@enduml

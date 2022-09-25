@@ -1,0 +1,90 @@
+@startuml
+!include ../../../../styles.puml!interaction
+
+interface p01
+interface p02
+interface p03
+interface p04
+note top of p02
+  Классический обмен
+  слева по цепочке
+end note
+note top of p04
+  Классический обмен
+  справа по цепочке
+end note
+
+card П1 <<проект>> {
+  card Ц1 <<цепочка добавленной стоимости>> {
+    card Алиса as a1 <<актив>>
+    card Боб as b1 <<актив>>
+    interface p1
+
+    label "<&puzzle-piece>1" as s1_w1
+    label "<&puzzle-piece>4" as s1_w2
+    label "<&puzzle-piece>2" as s1_w3
+  }
+
+  card Ц2 <<цепочка добавленной стоимости>> {
+    card Алиса as a2 <<актив>>
+    card Кэрол as c1 <<актив>>
+    interface p2
+    note bottom of p2
+      Доступ к активу
+      внутри проекта
+    end note
+
+    label "<&puzzle-piece>1" as s2_w1
+    label "<&puzzle-piece>1" as s2_w2
+    label "<&puzzle-piece>1" as s2_w3 <<hidden>>
+  }
+}
+
+p01 -- a1
+p1 -- b1
+a1 -- p1
+a1 -[hidden]r- s1_w1
+b1 -[hidden]l- s1_w2
+a1 -[hidden]l- s1_w3
+b1 -- p03
+
+p02 -- a2
+p2 -- c1
+a2 -- p2
+a2 -[hidden]r- s2_w1
+c1 -[hidden]l- s2_w2
+a2 -[hidden]l- s2_w3
+c1 -- p04
+
+p01 -[hidden] p02
+p03 -[hidden] p04
+
+note as N1
+  Любые взаимодействия
+  осуществляются через платформу
+end note
+N1 .u. p02
+p2 .. N1
+N1 .. p04
+
+note bottom of s1_w1
+  Вклад Алисы после начала
+  обмена слева и перед
+  взаимодействием с Бобом
+end note
+note right of s1_w2
+  Вклад Боба после
+  выполнения обмена справа
+end note
+note left of s1_w3
+  Вклад Алисы после
+  взаимодействия с Бобом и
+  перед завершением обмена слева
+end note
+
+legend left
+  Считаем, что конечные потребители находятся слева по цепочке.
+  Поэтому после успешного обмена слева, проиcходит делёжка полученного пропорционально вложенным ресурсам.
+  В цепочке Ц1 Алиса получает 3/7, Боб - 4/7. В цепочке Ц2 Алиса и Кэрол получают по 1/2.
+end legend
+@enduml

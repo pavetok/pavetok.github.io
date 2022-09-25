@@ -1,0 +1,12 @@
+@startuml
+!include transaction-agents.puml
+
+client1 -- platform: <&script>1
+client2 -- platform: <&script>2
+
+platform -- server1: <&script>2
+
+platform -- server2: <&script>1
+platform -- server2: <&document>1
+platform -- server2: <&tag>1
+@enduml

@@ -1,0 +1,9 @@
+@startuml
+!include transaction-agents.puml
+
+client1 -- platform: <&person>1
+client2 -- platform: <&person>2
+
+platform -- server1: <&person>2
+platform -- server2: <&person>1
+@enduml

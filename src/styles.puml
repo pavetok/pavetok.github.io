@@ -32,3 +32,39 @@ skinparam label {
     FontSize 0
 }
 @enduml
+
+@startuml(id=interaction)
+left to right direction
+
+skinparam nodesep 1
+skinparam ranksep 20
+
+skinparam card {
+    BorderThickness 0.5
+    BackgroundColor 0
+}
+
+skinparam cloud {
+    BorderThickness 0.5
+    BackgroundColor 0
+}
+
+skinparam interface {
+    FontSize 0
+}
+
+skinparam label {
+    FontSize 18
+}
+
+skinparam note {
+  TextAlignment center
+}
+
+skinparam legend {
+  BackgroundColor transparent
+}
+
+hide <<hidden>>
+hide <<hidden>> stereotype
+@enduml

@@ -1,0 +1,9 @@
+@startuml
+!include transaction-agents.puml
+
+client1 -- platform: <&pie-chart>1
+client2 -- platform: <&pie-chart>2
+
+platform -- server1: <&pie-chart>2
+platform -- server2: <&pie-chart>1
+@enduml
